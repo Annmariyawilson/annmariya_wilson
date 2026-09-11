@@ -1,13 +1,18 @@
 /* ==========================================================================
-   Design System & Tokens (Luxury Editorial Minimalist — Sage & Warm Stone)
+   Google Font Import: Petrona (Serif)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ==========================================================================
+   Design System & Tokens (Luxury Light Editorial — Sage & Warm Porcelain)
    ========================================================================== */
 :root {
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Petrona', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Primary Editorial Light Palette (Default as in reference) */
+  /* Primary Editorial Light Palette (Default) */
   --bg-primary: #fafaf8;
-  --bg-secondary: #f1f1eb;
+  --bg-secondary: #f2f1eb;
   --bg-stone: #eae9e2;
   --bg-card: #ffffff;
   --bg-card-hover: #ffffff;
@@ -22,7 +27,7 @@
   --text-muted: #7e8680;
   --text-light: #ffffff;
 
-  /* Earthy Sage Green Accents */
+  /* Signature Earthy Sage Green */
   --accent-sage: #5f705e;
   --accent-sage-dark: #4b5a4a;
   --accent-sage-light: #edf2ed;
@@ -108,7 +113,7 @@ h1, h2, h3, .serif-heading {
   color: var(--text-primary);
   font-weight: 500;
   letter-spacing: -0.015em;
-  line-height: 1.18;
+  line-height: 1.2;
 }
 
 .section-tag {
@@ -123,13 +128,13 @@ h1, h2, h3, .serif-heading {
 }
 
 .section-title {
-  font-size: 2.6rem;
+  font-size: 2.75rem;
   margin-bottom: 0.85rem;
 }
 
 .section-desc {
   color: var(--text-secondary);
-  max-width: 580px;
+  max-width: 600px;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -166,21 +171,21 @@ h1, h2, h3, .serif-heading {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(250, 250, 248, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(250, 250, 248, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
   transition: var(--transition-smooth);
 }
 
 body.dark-theme .site-header {
-  background: rgba(17, 20, 19, 0.92);
+  background: rgba(17, 20, 19, 0.94);
 }
 
 .nav-container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 1.1rem 2rem;
+  padding: 1.15rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,8 +200,8 @@ body.dark-theme .site-header {
 }
 
 .logo-symbol {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   background: var(--accent-sage);
   color: #fff;
   border-radius: var(--radius-xs);
@@ -204,7 +209,7 @@ body.dark-theme .site-header {
   align-items: center;
   justify-content: center;
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -268,7 +273,7 @@ body.dark-theme .site-header {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .theme-toggle-btn {
@@ -380,7 +385,7 @@ body.dark-theme .site-header {
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.12;
@@ -393,11 +398,11 @@ body.dark-theme .site-header {
 }
 
 .hero-subtitle {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   color: var(--text-secondary);
   margin-bottom: 2.25rem;
-  max-width: 520px;
-  line-height: 1.65;
+  max-width: 530px;
+  line-height: 1.68;
 }
 
 .hero-cta-group {
@@ -454,7 +459,7 @@ body.dark-theme .site-header {
 }
 
 .hero-card-name {
-  font-size: 1.8rem;
+  font-size: 1.95rem;
   color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
@@ -492,7 +497,7 @@ body.dark-theme .site-header {
 }
 
 /* ==========================================================================
-   Selected Projects Section (Editorial Showcase)
+   Selected Projects Section (12 Live Projects Showcase)
    ========================================================================== */
 .section {
   padding: 6rem 0;
@@ -509,6 +514,7 @@ body.dark-theme .site-header {
 
 .filter-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
 }
 
@@ -546,7 +552,7 @@ body.dark-theme .site-header {
 }
 
 .project-thumbnail {
-  height: 190px;
+  height: 180px;
   background-color: var(--bg-secondary);
   position: relative;
   display: flex;
@@ -556,20 +562,10 @@ body.dark-theme .site-header {
   overflow: hidden;
 }
 
-.thumbnail-dark {
-  background: #181d1b;
-  color: #fff;
-}
-
-.thumbnail-cream {
-  background: #f1f0ea;
-  color: #2a312d;
-}
-
-.thumbnail-stone {
-  background: #e8e9e4;
-  color: #38423d;
-}
+.thumbnail-dark { background: #161b18; color: #fff; }
+.thumbnail-cream { background: #f2f0e8; color: #28302b; }
+.thumbnail-stone { background: #e8eae4; color: #323d36; }
+.thumbnail-sage { background: #e3ebe2; color: #435442; }
 
 .thumbnail-icon-wrap {
   opacity: 0.85;
@@ -577,21 +573,21 @@ body.dark-theme .site-header {
 
 .project-card-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(255, 255, 255, 0.9);
+  top: 0.9rem;
+  right: 0.9rem;
+  background: rgba(255, 255, 255, 0.92);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-xs);
 }
 
 body.dark-theme .project-card-badge {
-  background: rgba(24, 29, 27, 0.9);
+  background: rgba(24, 29, 27, 0.92);
   color: var(--text-primary);
 }
 
@@ -612,7 +608,7 @@ body.dark-theme .project-card-badge {
 }
 
 .project-heading {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   margin-bottom: 0.65rem;
 }
 
@@ -651,7 +647,7 @@ body.dark-theme .project-card-badge {
   background: none;
   border: none;
   color: var(--text-primary);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -664,6 +660,28 @@ body.dark-theme .project-card-badge {
 
 .project-view-link:hover {
   color: var(--accent-sage);
+}
+
+.project-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--accent-sage-light);
+  color: var(--accent-sage);
+  border: 1px solid var(--accent-sage-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-xs);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.project-live-btn:hover {
+  background: var(--accent-sage);
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -694,7 +712,7 @@ body.dark-theme .project-card-badge {
 }
 
 .service-card-title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-bottom: 0.65rem;
 }
 
@@ -743,7 +761,7 @@ body.dark-theme .project-card-badge {
 
 .stats-big-number {
   font-family: var(--font-serif);
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1;
@@ -793,7 +811,7 @@ body.dark-theme .project-card-badge {
 }
 
 .process-step-title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -838,7 +856,7 @@ body.dark-theme .project-card-badge {
 }
 
 .category-title {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .skill-pills-wrap {
@@ -924,7 +942,7 @@ body.dark-theme .project-card-badge {
 }
 
 .exp-role {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--text-primary);
 }
 
@@ -1072,7 +1090,7 @@ body.dark-theme .project-card-badge {
 }
 
 .edu-title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: var(--text-primary);
 }
 
@@ -1122,7 +1140,7 @@ body.dark-theme .project-card-badge {
 }
 
 .contact-large-title {
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   color: var(--text-primary);
   margin-bottom: 1.25rem;
   line-height: 1.15;
@@ -1318,7 +1336,7 @@ body.dark-theme .project-card-badge {
 }
 
 .modal-title {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 1rem;
 }
 

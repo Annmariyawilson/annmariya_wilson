@@ -1,6 +1,5 @@
 import React from 'react';
-import { X } from 'lucide-react';
-import { GitHubIcon } from './Icons';
+import { X, ExternalLink } from 'lucide-react';
 
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
@@ -15,7 +14,7 @@ const ProjectModal = ({ project, onClose }) => {
       aria-modal="true"
     >
       <div
-        className="modal-dialog glass-panel"
+        className="modal-dialog editorial-card"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -23,14 +22,14 @@ const ProjectModal = ({ project, onClose }) => {
           onClick={onClose}
           aria-label="Close modal"
         >
-          <X size={20} />
+          <X size={18} />
         </button>
 
         <span className="modal-category">{project.category}</span>
-        <h3 className="modal-title">{project.title}</h3>
+        <h3 className="modal-title serif-heading">{project.title}</h3>
         <p className="modal-desc">{project.fullDesc}</p>
 
-        <h4 className="modal-section-title">Key Architectural Features & Workflows:</h4>
+        <h4 className="modal-section-title">Key Architectural Features & Highlights:</h4>
         <ul className="modal-features-list">
           {project.features.map((feature, fIdx) => (
             <li key={fIdx}>{feature}</li>
@@ -38,26 +37,28 @@ const ProjectModal = ({ project, onClose }) => {
         </ul>
 
         <h4 className="modal-section-title">Technologies Used:</h4>
-        <div className="project-tech-list" style={{ marginBottom: '1.75rem' }}>
+        <div className="project-tags-list" style={{ marginBottom: '1.75rem' }}>
           {project.techStack.map((tech, tIdx) => (
-            <span key={tIdx} className="tech-pill">
+            <span key={tIdx} className="project-tag-item">
               {tech}
             </span>
           ))}
         </div>
 
         <div className="modal-footer">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary btn-sm"
-          >
-            <GitHubIcon size={16} />
-            <span>GitHub Repository</span>
-          </a>
-          <button className="btn btn-primary btn-sm" onClick={onClose}>
-            Done
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sage btn-sm"
+            >
+              <span>Visit Live Website</span>
+              <ExternalLink size={14} />
+            </a>
+          )}
+          <button className="btn btn-outline-editorial btn-sm" onClick={onClose}>
+            Close
           </button>
         </div>
       </div>

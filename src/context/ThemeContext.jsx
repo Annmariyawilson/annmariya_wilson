@@ -5,16 +5,17 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('annmariya-theme');
-    return saved ? saved : 'dark';
+    // Default to light theme as requested
+    return saved ? saved : 'light';
   });
 
   useEffect(() => {
-    document.body.className = theme === 'light' ? 'light-theme' : 'dark-theme';
+    document.body.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
     localStorage.setItem('annmariya-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
   return (
