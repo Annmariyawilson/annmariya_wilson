@@ -2,28 +2,29 @@ import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Services from './components/Services';
+import StatsStrip from './components/StatsStrip';
 import About from './components/About';
 import Skills from './components/Skills';
+import Process from './components/Process';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <ThemeProvider>
-      {/* Ambient background light orbs */}
-      <div className="glow-sphere sphere-1" aria-hidden="true"></div>
-      <div className="glow-sphere sphere-2" aria-hidden="true"></div>
-      <div className="glow-sphere sphere-3" aria-hidden="true"></div>
-
       <Navbar />
       <main id="mainContent">
         <Hero />
+        <Projects />
+        <Services />
+        <StatsStrip />
         <About />
         <Skills />
+        <Process />
         <Experience />
-        <Projects />
         <Contact />
       </main>
       <Footer />

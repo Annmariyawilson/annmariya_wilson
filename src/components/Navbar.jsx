@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { Sun, Moon, Menu, X } from 'lucide-react';
+import { Sun, Moon, Menu, X, ArrowUpRight } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Navbar = () => {
@@ -14,15 +14,21 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="#hero" className="brand-logo" id="brandLogo" onClick={closeMenu}>
           <span className="logo-symbol">AW</span>
-          <span className="logo-text">
-            {personalInfo.name.split(' ')[0]}
-            <span className="highlight">.</span>
-          </span>
+          <div className="logo-text-group">
+            <span className="logo-text">{personalInfo.name}</span>
+            <span className="logo-sub">Full Stack Developer</span>
+          </div>
         </a>
 
         <nav className={`nav-links ${mobileMenuOpen ? 'active' : ''}`} id="navMenu">
           <a href="#about" className="nav-link" onClick={closeMenu}>
             About
+          </a>
+          <a href="#projects" className="nav-link" onClick={closeMenu}>
+            Work
+          </a>
+          <a href="#services" className="nav-link" onClick={closeMenu}>
+            Services
           </a>
           <a href="#skills" className="nav-link" onClick={closeMenu}>
             Skills
@@ -30,11 +36,9 @@ const Navbar = () => {
           <a href="#experience" className="nav-link" onClick={closeMenu}>
             Experience
           </a>
-          <a href="#projects" className="nav-link" onClick={closeMenu}>
-            Projects
-          </a>
-          <a href="#contact" className="nav-link nav-link-btn" onClick={closeMenu}>
-            Let's Connect
+          <a href="#contact" className="btn btn-sage btn-sm" onClick={closeMenu}>
+            <span>Let's Talk</span>
+            <ArrowUpRight size={14} />
           </a>
         </nav>
 
@@ -46,7 +50,7 @@ const Navbar = () => {
             aria-label="Toggle theme mode"
             title="Toggle theme"
           >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
           </button>
 
           <button
@@ -55,7 +59,7 @@ const Navbar = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
