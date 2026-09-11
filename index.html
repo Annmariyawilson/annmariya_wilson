@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annmariya Wilson — Creative Developer & UI/UX Specialist</title>
+    <meta name="description" content="Portfolio of Annmariya Wilson, featuring modern digital experiences, innovative full-stack projects, and state-of-the-art UI/UX engineering.">
+    <meta name="keywords" content="Annmariya Wilson, Software Engineer, Frontend Developer, Full Stack, UI UX, Web Development, Portfolio">
+    <meta name="author" content="Annmariya Wilson">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Annmariya Wilson — Creative Developer">
+    <meta property="og:description" content="Crafting modern digital experiences with cutting-edge technology and refined design.">
+    <meta property="og:url" content="https://annmariya-wilson.vercel.app">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Glows -->
+    <div class="glow-sphere sphere-1" aria-hidden="true"></div>
+    <div class="glow-sphere sphere-2" aria-hidden="true"></div>
+    <div class="glow-sphere sphere-3" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo" id="brandLogo">
+                <span class="logo-symbol">AW</span>
+                <span class="logo-text">Annmariya<span class="highlight">.</span></span>
+            </a>
+
+            <nav class="nav-links" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link nav-link-btn">Let's Talk</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge" id="statusBadge">
+                        <span class="status-pulse"></span>
+                        <span>Available for new projects & collaborations</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">exceptional</span> digital experiences that make an impact.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Hi, I'm <strong class="text-white">Annmariya Wilson</strong>. A full-stack creative engineer specializing in modern web applications, scalable architectures, and pixel-perfect user experiences.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="exploreProjectsBtn">
+                            <span>Explore Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="contactHeroBtn">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="99.9">99.9%</span>
+                            <span class="stat-label">Code Quality & Uptime</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="24">24+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="100">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glass-card hero-preview-card">
+                        <div class="code-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="code-title">developer_profile.ts</span>
+                            <span class="code-status">Live</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Annmariya Wilson"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Creative Full-Stack Developer"</span>,
+  <span class="code-prop">location</span>: <span class="code-string">"India / Remote"</span>,
+  <span class="code-prop">passions</span>: [<span class="code-string">"Clean Code"</span>, <span class="code-string">"Modern UI"</span>, <span class="code-string">"High Performance"</span>],
+  <span class="code-prop">stack</span>: {
+    <span class="code-prop">frontend</span>: [<span class="code-string">"TypeScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Next.js"</span>, <span class="code-string">"Tailwind"</span>],
+    <span class="code-prop">backend</span>: [<span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"REST/GraphQL"</span>, <span class="code-string">"PostgreSQL"</span>],
+    <span class="code-prop">cloud</span>: [<span class="code-string">"Vercel"</span>, <span class="code-string">"AWS"</span>, <span class="code-string">"Docker"</span>, <span class="code-string">"CI/CD"</span>]
+  },
+  <span class="code-prop">status</span>: <span class="code-string">"Ready to create something amazing ✨"</span>
+};</code></pre>
+                        <div class="card-footer-badge">
+                            <div class="badge-icon">⚡</div>
+                            <div class="badge-text">
+                                <strong>Vercel Optimized</strong>
+                                <span>Zero-config deployment ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Bridging creativity and engineering excellence</h2>
+                    <p class="section-desc">Passionate about building scalable applications and intuitive interfaces that solve real-world problems.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="icon-box">💡</div>
+                        <h3 class="about-card-title">Engineering Philosophy</h3>
+                        <p>I prioritize clean, maintainable architecture paired with fluid, accessible user experiences. Every line of code is structured for performance, security, and scalability.</p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="icon-box">🎨</div>
+                        <h3 class="about-card-title">UI/UX Precision</h3>
+                        <p>Design is not just how it looks, but how it works. From typography hierarchies to micro-interactions, I craft products that feel responsive, alive, and delightful.</p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="icon-box">🚀</div>
+                        <h3 class="about-card-title">Cloud & Deployment</h3>
+                        <p>Specialized in modern Jamstack, serverless architectures, and CI/CD automated pipelines with high performance on platforms like Vercel, Netlify, and AWS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Tech Stack</span>
+                    <h2 class="section-title">Tools & Technologies I work with</h2>
+                    <p class="section-desc">A curated stack of modern languages, frameworks, and tools to bring ideas to life.</p>
+                </div>
+
+                <div class="skills-categories">
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <div class="category-icon">💻</div>
+                            <h3 class="category-title">Frontend Architecture</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5 / Semantic Web</span>
+                            <span class="skill-tag">Modern CSS3 & Animations</span>
+                            <span class="skill-tag">JavaScript (ES6+)</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <div class="category-icon">⚙️</div>
+                            <h3 class="category-title">Backend & Systems</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PostgreSQL / MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Auth & Security</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <div class="category-icon">☁️</div>
+                            <h3 class="category-title">DevOps, Cloud & Tooling</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Vercel Deployment</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">CI/CD Workflows</span>
+                            <span class="skill-tag">Vite & Webpack</span>
+                            <span class="skill-tag">Lighthouse SEO & Speed</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-split">
+                        <div>
+                            <span class="section-tag">Featured Work</span>
+                            <h2 class="section-title">Selected Projects</h2>
+                        </div>
+                        <div class="filter-controls" id="projectFilter">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web">Web Apps</button>
+                            <button class="filter-btn" data-filter="design">UI Systems</button>
+                            <button class="filter-btn" data-filter="cloud">Cloud</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel" data-category="web">
+                        <div class="project-banner banner-gradient-1">
+                            <span class="banner-badge">Full Stack</span>
+                            <div class="banner-icon-graphic">⚡</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">2026</span>
+                                <span class="project-category">Web Application</span>
+                            </div>
+                            <h3 class="project-title">Aura Analytics Dashboard</h3>
+                            <p class="project-description">Real-time telemetry and analytics platform with interactive charting, customizable dashboards, and live alerts.</p>
+                            <div class="project-tech-list">
+                                <span class="tech-pill">Next.js</span>
+                                <span class="tech-pill">TypeScript</span>
+                                <span class="tech-pill">Tailwind</span>
+                                <span class="tech-pill">Vercel</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline preview-btn" data-title="Aura Analytics" data-desc="Real-time analytics engine providing sub-second metric visualisations and data streaming.">View Details</button>
+                                <a href="https://github.com/Annmariyawilson/annmariya_wilson" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel" data-category="design">
+                        <div class="project-banner banner-gradient-2">
+                            <span class="banner-badge">UI/UX</span>
+                            <div class="banner-icon-graphic">✨</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">2026</span>
+                                <span class="project-category">Design System</span>
+                            </div>
+                            <h3 class="project-title">Nova Component Architecture</h3>
+                            <p class="project-description">Modern accessible design system featuring 40+ tokens, dark mode primitives, and high-performance micro-interactions.</p>
+                            <div class="project-tech-list">
+                                <span class="tech-pill">CSS Variables</span>
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">Figma</span>
+                                <span class="tech-pill">Storybook</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline preview-btn" data-title="Nova Design System" data-desc="Comprehensive component kit created for enterprise-grade applications with zero runtime overhead.">View Details</button>
+                                <a href="https://github.com/Annmariyawilson/annmariya_wilson" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel" data-category="cloud">
+                        <div class="project-banner banner-gradient-3">
+                            <span class="banner-badge">Cloud Engine</span>
+                            <div class="banner-icon-graphic">🚀</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">2026</span>
+                                <span class="project-category">Serverless API</span>
+                            </div>
+                            <h3 class="project-title">CloudPulse Edge Gateway</h3>
+                            <p class="project-description">Low-latency Edge middleware facilitating intelligent routing, rate limiting, and automated health checks across multiple regions.</p>
+                            <div class="project-tech-list">
+                                <span class="tech-pill">Edge Functions</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Redis</span>
+                                <span class="tech-pill">Vercel</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline preview-btn" data-title="CloudPulse Edge" data-desc="Distributed Edge middleware for ultra-fast response caching and traffic management.">View Details</button>
+                                <a href="https://github.com/Annmariyawilson/annmariya_wilson" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Repository">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section-title">What I Bring to the Table</h2>
+                    <p class="section-desc">From initial concept to production deployment, delivering comprehensive end-to-end development.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">🌐</div>
+                        <h3 class="service-title">Full-Stack Web Apps</h3>
+                        <p class="service-desc">Robust web applications built with modern frameworks, secure authentication, and seamless database integration.</p>
+                        <ul class="service-features">
+                            <li>Modern React / Next.js architecture</li>
+                            <li>REST & GraphQL APIs</li>
+                            <li>Database design & optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">⚡</div>
+                        <h3 class="service-title">High-Performance Frontends</h3>
+                        <p class="service-desc">Lightning-fast user interfaces scoring 95+ on Google Lighthouse with fluid animations and responsive layouts.</p>
+                        <ul class="service-features">
+                            <li>Semantic HTML5 & Accessible ARIA</li>
+                            <li>Smooth CSS & WebGL interactions</li>
+                            <li>Mobile-first design</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass-panel">
+                        <div class="service-icon">🛠️</div>
+                        <h3 class="service-title">Vercel & Cloud Hosting</h3>
+                        <p class="service-desc">Effortless deployment setups, custom domain configurations, Edge routing, and automated CI/CD pipelines.</p>
+                        <ul class="service-features">
+                            <li>Vercel zero-config deploy</li>
+                            <li>Global CDN & Edge performance</li>
+                            <li>Continuous integration workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper glass-panel">
+                    <div class="contact-info">
+                        <span class="section-tag">Connect</span>
+                        <h2 class="contact-title">Let's build something remarkable together.</h2>
+                        <p class="contact-desc">Have a project in mind or looking for a skilled developer to join your team? Feel free to reach out!</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="item-icon">📬</div>
+                                <div>
+                                    <span class="item-label">GitHub</span>
+                                    <a href="https://github.com/Annmariyawilson" target="_blank" rel="noopener noreferrer" class="item-value">github.com/Annmariyawilson</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="item-icon">🚀</div>
+                                <div>
+                                    <span class="item-label">Live Deployment</span>
+                                    <span class="item-value">Ready on Vercel</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Annmariyawilson" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Send a Message</h3>
+                        <div class="form-group">
+                            <label for="nameInput">Your Name</label>
+                            <input type="text" id="nameInput" name="name" placeholder="Alex Morgan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Your Email</label>
+                            <input type="email" id="emailInput" name="email" placeholder="alex@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput">Your Message</label>
+                            <textarea id="messageInput" name="message" rows="4" placeholder="Hello Annmariya, let's discuss a project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="sendMsgBtn">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                        <div class="form-toast" id="formToast" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Project Details -->
+    <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+        <div class="modal-dialog glass-panel">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <h3 class="modal-title" id="modalTitle">Project Title</h3>
+            <p class="modal-desc" id="modalDesc">Project description goes here.</p>
+            <div class="modal-footer">
+                <a href="https://github.com/Annmariyawilson/annmariya_wilson" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Repository</a>
+                <button class="btn btn-secondary" id="modalCloseSecondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">AW</span>
+                <p>&copy; 2026 Annmariya Wilson. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <span class="badge-tag">Hosted with ⚡ on Vercel</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
