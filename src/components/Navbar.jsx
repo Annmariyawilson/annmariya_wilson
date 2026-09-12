@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useTheme } from '../context/ThemeContext';
-import { Sun, Moon, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const closeMenu = () => setMobileMenuOpen(false);
@@ -25,16 +23,16 @@ const Navbar = () => {
             About
           </a>
           <a href="#projects" className="nav-link" onClick={closeMenu}>
-            Work
-          </a>
-          <a href="#services" className="nav-link" onClick={closeMenu}>
-            Services
+            Projects
           </a>
           <a href="#skills" className="nav-link" onClick={closeMenu}>
             Skills
           </a>
           <a href="#experience" className="nav-link" onClick={closeMenu}>
             Experience
+          </a>
+          <a href="#services" className="nav-link" onClick={closeMenu}>
+            Services
           </a>
           <a href="#contact" className="btn btn-sage btn-sm" onClick={closeMenu}>
             <span>Let's Talk</span>
@@ -44,22 +42,12 @@ const Navbar = () => {
 
         <div className="nav-actions">
           <button
-            className="theme-toggle-btn"
-            id="themeToggle"
-            onClick={toggleTheme}
-            aria-label="Toggle theme mode"
-            title="Toggle theme"
-          >
-            {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
-          </button>
-
-          <button
             className="mobile-toggle"
             id="mobileMenuBtn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
