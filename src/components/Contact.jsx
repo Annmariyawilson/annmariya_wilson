@@ -56,7 +56,7 @@ const Contact = () => {
                     </a>
                     <button
                       onClick={handleCopyEmail}
-                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--accent-sage)' }}
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#31572c', display: 'flex', alignItems: 'center' }}
                       title="Copy email"
                     >
                       {copied ? <Check size={14} /> : <Copy size={14} />}

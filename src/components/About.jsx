@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, CheckCircle2, Terminal, ShieldCheck, Zap } from 'lucide-react';
+import { GraduationCap, Award, CheckCircle2, Terminal, ShieldCheck, Zap, Sparkles } from 'lucide-react';
 import { personalInfo, education, certifications } from '../data/portfolioData';
 
 const About = () => {
@@ -7,10 +7,13 @@ const About = () => {
     <section className="section about-section" id="about">
       <div className="container">
         <div className="section-header text-center">
-          <span className="section-tag">Professional Background</span>
+          <span className="section-tag">
+            <Sparkles size={13} />
+            <span>Professional Background</span>
+          </span>
           <h2 className="section-title">About Me & Qualifications</h2>
           <p className="section-desc">
-            Bridging frontend visual polish with resilient backend architectures to deliver comprehensive web applications.
+            Bridging frontend visual polish with resilient backend architectures to deliver comprehensive, production-ready web applications.
           </p>
         </div>
 
@@ -18,7 +21,7 @@ const About = () => {
           {/* Summary & Core Competencies */}
           <div className="about-card glass-panel">
             <div>
-              <h3 className="text-white" style={{ fontSize: '1.4rem', marginBottom: '0.8rem' }}>
+              <h3 className="serif-heading" style={{ fontSize: '1.6rem', marginBottom: '1rem' }}>
                 Full Stack Development Philosophy
               </h3>
               <p className="about-summary-p">{personalInfo.summary}</p>
@@ -26,20 +29,20 @@ const About = () => {
 
             <div className="about-highlights">
               <div className="about-highlight-item">
-                <CheckCircle2 size={18} color="var(--accent-emerald)" />
-                <span>MERN & MEAN Stack Development</span>
+                <CheckCircle2 size={20} color="#31572c" />
+                <span>MERN & MEAN Stack Architecture</span>
               </div>
               <div className="about-highlight-item">
-                <ShieldCheck size={18} color="var(--accent-primary)" />
+                <ShieldCheck size={20} color="#4f772d" />
                 <span>JWT & Role-Based Access Control</span>
               </div>
               <div className="about-highlight-item">
-                <Terminal size={18} color="var(--accent-cyan)" />
-                <span>REST API Integration & CRUD</span>
+                <Terminal size={20} color="#31572c" />
+                <span>RESTful APIs & CRUD Pipelines</span>
               </div>
               <div className="about-highlight-item">
-                <Zap size={18} color="var(--accent-amber)" />
-                <span>AI-Driven Acceleration (Cursor/Antigravity)</span>
+                <Zap size={20} color="#90a955" />
+                <span>AI Workflow Acceleration</span>
               </div>
             </div>
           </div>
@@ -54,7 +57,7 @@ const About = () => {
                     <GraduationCap size={22} />
                   </div>
                   <div>
-                    <h4 className="edu-title">{edu.degree}</h4>
+                    <h4 className="edu-title serif-heading">{edu.degree}</h4>
                     <span className="edu-institution">{edu.institution}</span>
                   </div>
                 </div>
@@ -70,11 +73,11 @@ const About = () => {
             {certifications.map((cert, idx) => (
               <div key={idx} className="glass-panel cert-card">
                 <div className="edu-cert-header">
-                  <div className="edu-icon-wrap" style={{ background: 'rgba(168, 85, 247, 0.12)', color: 'var(--accent-secondary)' }}>
+                  <div className="edu-icon-wrap">
                     <Award size={22} />
                   </div>
                   <div>
-                    <h4 className="edu-title">{cert.title}</h4>
+                    <h4 className="edu-title serif-heading">{cert.title}</h4>
                     <span className="edu-institution">{cert.issuer}</span>
                   </div>
                 </div>

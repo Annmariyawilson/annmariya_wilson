@@ -33,13 +33,6 @@ const iconLookup = {
   'ar-architects': Building2
 };
 
-const thumbnailStyles = [
-  'thumbnail-dark',
-  'thumbnail-cream',
-  'thumbnail-stone',
-  'thumbnail-sage'
-];
-
 const Projects = () => {
   const [filter, setFilter] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
@@ -78,10 +71,13 @@ const Projects = () => {
       <div className="container">
         <div className="header-split">
           <div>
-            <span className="section-tag">Selected Work</span>
+            <span className="section-tag">
+              <Sparkles size={13} />
+              <span>Selected Work</span>
+            </span>
             <h2 className="section-title">Featured Projects</h2>
             <p className="section-desc">
-              A collection of live commercial web applications, e-commerce storefronts, institutional portals, and SaaS platforms.
+              A collection of live commercial web applications, e-commerce storefronts, institutional portals, and SaaS platforms built with modern full-stack technologies.
             </p>
           </div>
 
@@ -101,20 +97,35 @@ const Projects = () => {
         <div className="projects-grid">
           {filteredProjects.map((project, idx) => {
             const Icon = iconLookup[project.id] || Sparkles;
-            const themeClass = thumbnailStyles[idx % thumbnailStyles.length];
 
             return (
-              <article key={project.id} className="editorial-card project-card">
-                <div className={`project-thumbnail ${themeClass}`}>
+              <article key={project.id} className="project-card">
+                <div className="project-thumbnail" onClick={() => setSelectedProject(project)} style={{ cursor: 'pointer' }}>
                   <span className="project-card-badge">{project.badge}</span>
-                  <div className="thumbnail-icon-wrap">
-                    <Icon size={44} />
-                  </div>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-card-img"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="thumbnail-icon-wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+                      <Icon size={44} />
+                    </div>
+                  )}
+                  <div className="project-card-overlay" />
                 </div>
 
                 <div className="project-body">
                   <div className="project-client-cat">{project.category}</div>
-                  <h3 className="project-heading serif-heading">{project.title}</h3>
+                  <h3
+                    className="project-heading serif-heading"
+                    onClick={() => setSelectedProject(project)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {project.title}
+                  </h3>
                   <p className="project-desc">{project.shortDesc}</p>
 
                   <div className="project-tags-list">

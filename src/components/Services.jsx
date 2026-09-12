@@ -1,26 +1,26 @@
 import React from 'react';
-import { Globe, Smartphone, Server, Layers } from 'lucide-react';
+import { Globe, Smartphone, Server, Layers, Sparkles } from 'lucide-react';
 
 const services = [
   {
     icon: Globe,
     title: "Web Development",
-    desc: "Scalable, high-performance web applications built with React.js, Next.js, and modern TypeScript architecture."
+    desc: "Scalable, high-performance web applications built with React.js, Next.js, TypeScript, and modern modular architectures."
   },
   {
     icon: Smartphone,
     title: "UI/UX Engineering",
-    desc: "Intuitive, responsive user interfaces and reusable component systems that deliver fluid interactions across devices."
+    desc: "Intuitive, responsive user interfaces and reusable component systems that deliver fluid interactions across all devices."
   },
   {
     icon: Server,
     title: "Backend & REST APIs",
-    desc: "Robust Node.js & Express servers, JWT authentication, role-based access control (RBAC), and database integration."
+    desc: "Robust Node.js & Express servers, JWT authentication, role-based access control (RBAC), and fast database integration."
   },
   {
     icon: Layers,
-    title: "Cloud & DevOps",
-    desc: "Seamless Vercel deployment setups, SEO optimization, and agile workflow delivery using Git, Jira, and Slack."
+    title: "Cloud & Optimization",
+    desc: "Seamless Vercel deployment setups, technical SEO optimization, and agile delivery using Git, Jira, and Slack."
   }
 ];
 
@@ -29,8 +29,14 @@ const Services = () => {
     <section className="section services-section" id="services">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">What I Do</span>
+          <span className="section-tag">
+            <Sparkles size={13} />
+            <span>What I Do</span>
+          </span>
           <h2 className="section-title">Services & Capabilities</h2>
+          <p className="section-desc">
+            End-to-end engineering expertise delivering polished digital products from concept to cloud deployment.
+          </p>
         </div>
 
         <div className="services-grid">
@@ -39,7 +45,7 @@ const Services = () => {
             return (
               <div key={idx} className="editorial-card service-card">
                 <div className="service-icon-circle">
-                  <Icon size={20} />
+                  <Icon size={22} />
                 </div>
                 <h3 className="service-card-title serif-heading">{item.title}</h3>
                 <p className="service-card-desc">{item.desc}</p>

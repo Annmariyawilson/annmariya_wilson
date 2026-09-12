@@ -14,7 +14,7 @@ const ProjectModal = ({ project, onClose }) => {
       aria-modal="true"
     >
       <div
-        className="modal-dialog editorial-card"
+        className="modal-dialog"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -24,6 +24,16 @@ const ProjectModal = ({ project, onClose }) => {
         >
           <X size={18} />
         </button>
+
+        {project.image && (
+          <div className="modal-hero-img-wrap">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="modal-hero-img"
+            />
+          </div>
+        )}
 
         <span className="modal-category">{project.category}</span>
         <h3 className="modal-title serif-heading">{project.title}</h3>

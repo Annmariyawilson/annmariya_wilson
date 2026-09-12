@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
+import ScrollProgress from './components/ScrollProgress';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Services from './components/Services';
@@ -15,6 +16,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <ThemeProvider>
+      <ScrollProgress />
       <Navbar />
       <main id="mainContent">
         <Hero />
