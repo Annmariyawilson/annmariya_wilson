@@ -5,7 +5,7 @@ const statsData = [
   {
     icon: Award,
     target: 2,
-    suffix: "+",
+    suffix: "",
     label: "Years Experience"
   },
   {

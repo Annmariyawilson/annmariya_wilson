@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Annmariya Wilson",
   role: "Full Stack Developer",
-  avatar: "/assets/hero/hero_avatar.jpg",
+  avatar: "/assets/hero/annmariya-hero.jpg",
   subtitles: ["React.js", "Next.js", "Node.js", "Express.js", "MERN / MEAN"],
   tagline: "Building scalable web applications, e-commerce platforms, and seamless full-stack digital experiences.",
   email: "annmariyawilson04@gmail.com",
@@ -14,7 +14,7 @@ export const personalInfo = {
   summary:
     "Full Stack Developer with 2 years of experience building responsive, production-ready web applications using React.js, Next.js, Angular, Node.js, Express.js, MongoDB and REST APIs. Skilled in MERN/MEAN development, reusable UI components, authentication, API integration and performance optimization. Experienced with Cursor and Antigravity for AI-assisted development.",
   stats: [
-    { label: "Years Experience", value: "2+" },
+    { label: "Years Experience", value: "2" },
     { label: "Live Client Projects", value: "12+" },
     { label: "Tech Stack Modules", value: "15+" },
     { label: "Client Satisfaction", value: "100%" }
