@@ -134,6 +134,102 @@ export const experiences = [
 
 export const projects = [
   {
+    id: "salmara-ayurveda",
+    title: "Salmara Ayurveda",
+    liveUrl: "https://salmaraayurveda.com/",
+    image: "/assets/projects/salmara-ayurveda.jpg",
+    category: "E-Commerce",
+    badge: "Shopify Store",
+    techStack: ["Shopify", "React.js", "Next.js", "Node.js", "Supabase"],
+    shortDesc:
+      "Premium Ayurvedic wellness e-commerce storefront with live inventory sync, product catalog, and seamless checkout.",
+    fullDesc:
+      "Salmara Ayurveda is an end-to-end wellness e-commerce platform built with Next.js and Shopify APIs. Features intuitive storefronts with fast search, product categories, reviews, and automated inventory sync with Supabase and Node.js.",
+    features: [
+      "Shopify Headless API integration for product catalog and checkout",
+      "Admin inventory management with Supabase real-time updates",
+      "Lighthouse 95+ score with optimized speed and technical SEO",
+      "Clean, modern responsive UI tailored for Ayurvedic products"
+    ]
+  },
+  {
+    id: "chillmaster-uae",
+    title: "Chillmaster UAE",
+    liveUrl: "https://www.chillmasteruae.com/",
+    image: "/assets/projects/chillmaster-uae.jpg",
+    category: "Corporate & Services",
+    badge: "UAE Services",
+    techStack: ["Next.js", "React.js", "Tailwind CSS", "Responsive UI"],
+    shortDesc:
+      "Commercial HVAC, refrigeration, and cooling engineering services platform serving clients across the UAE.",
+    fullDesc:
+      "Chillmaster UAE is a commercial engineering services web application providing service booking, technical solution catalogs, client project showcases, and rapid quotation requests for cooling and HVAC systems in Dubai and across the UAE.",
+    features: [
+      "Service inquiry and quotation request workflows",
+      "Commercial and residential HVAC project showcases",
+      "Mobile-optimized emergency service contact integration",
+      "High performance on Vercel with localized SEO metadata"
+    ]
+  },
+  {
+    id: "kalangara-paints",
+    title: "Kalangara Paints",
+    liveUrl: "https://www.kalangarapaints.com/",
+    image: "/assets/projects/kalangara-paints.jpg",
+    category: "Corporate & Retail",
+    badge: "Industrial Brand",
+    techStack: ["React.js", "Node.js", "Express.js", "Tailwind CSS"],
+    shortDesc:
+      "Digital catalogue, color shade visualizer, and dealer locator for a premier decorative and industrial paint brand.",
+    fullDesc:
+      "Kalangara Paints is a corporate manufacturer and retail platform presenting extensive product ranges for interior, exterior, and industrial coatings with technical specifications and dealer network information.",
+    features: [
+      "Product categorization by surface, finish, and industrial application",
+      "Interactive color shade visualizer and technical data sheets",
+      "Dealer network and direct quotation inquiry system",
+      "Clean corporate design system with responsive layouts"
+    ]
+  },
+  {
+    id: "holycross-college",
+    title: "Holy Cross College",
+    liveUrl: "https://holycrosscollege.co.in/",
+    image: "/assets/projects/holycross-college.jpg",
+    category: "Institutional",
+    badge: "Official Portal",
+    techStack: ["Angular", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    shortDesc:
+      "Comprehensive institutional web portal and college management system with student, faculty, and administrative modules.",
+    fullDesc:
+      "Holy Cross College Management System is a full-featured institutional web application handling academic announcements, departments, faculty directories, student admissions, course curricula, and administrative controls with secure role separation.",
+    features: [
+      "Official academic portal and department management workflows",
+      "Role-based access for students, faculty, and administration",
+      "Course catalog, announcements, and examination schedule modules",
+      "Mobile-first responsive interface with fast load times",
+      "Secure backend architecture with MongoDB database integration"
+    ]
+  },
+  {
+    id: "day-off-journeys",
+    title: "Day Off Journeys",
+    liveUrl: "https://www.dayoffjourneys.com/",
+    image: "/assets/projects/day-off-journeys.jpg",
+    category: "Travel & Hospitality",
+    badge: "Live Client",
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "REST APIs"],
+    shortDesc:
+      "Curated travel, tour booking, and experiential vacation platform with interactive packages and itinerary planning.",
+    fullDesc:
+      "Day Off Journeys is a bespoke travel and tourism platform showcasing tailored vacation packages, destination guides, and seamless booking inquiry workflows with an immersive, visual user experience.",
+    features: [
+      "Interactive holiday packages and categorized destination browsing",
+      "Instant inquiry and custom itinerary request forms",
+      "Optimized media delivery and responsive travel imagery",
+      "Engaging UI with fluid transitions and modern typography"
+    ]
+  },
+  {
     id: "yacht-hub-dubai",
     title: "Yacht Hub Dubai",
     liveUrl: "https://www.yachthubdubai.com/",
@@ -247,102 +343,11 @@ export const projects = [
       "PAMM investment and team management workflows"
     ]
   },
-  {
-    id: "holycross-college",
-    title: "Holy Cross College",
-    liveUrl: "https://holycrosscollege.co.in/",
-    image: "/assets/projects/holycross-college.jpg",
-    category: "Institutional",
-    badge: "Official Portal",
-    techStack: ["Angular", "Node.js", "Express.js", "MongoDB", "REST APIs"],
-    shortDesc:
-      "Comprehensive institutional web portal and college management system with student, faculty, and administrative modules.",
-    fullDesc:
-      "Holy Cross College Management System is a full-featured institutional web application handling academic announcements, departments, faculty directories, student admissions, course curricula, and administrative controls with secure role separation.",
-    features: [
-      "Official academic portal and department management workflows",
-      "Role-based access for students, faculty, and administration",
-      "Course catalog, announcements, and examination schedule modules",
-      "Mobile-first responsive interface with fast load times",
-      "Secure backend architecture with MongoDB database integration"
-    ]
-  },
-  {
-    id: "day-off-journeys",
-    title: "Day Off Journeys",
-    liveUrl: "https://www.dayoffjourneys.com/",
-    image: "/assets/projects/day-off-journeys.jpg",
-    category: "Travel & Hospitality",
-    badge: "Live Client",
-    techStack: ["React.js", "Next.js", "Tailwind CSS", "REST APIs"],
-    shortDesc:
-      "Curated travel, tour booking, and experiential vacation platform with interactive packages and itinerary planning.",
-    fullDesc:
-      "Day Off Journeys is a bespoke travel and tourism platform showcasing tailored vacation packages, destination guides, and seamless booking inquiry workflows with an immersive, visual user experience.",
-    features: [
-      "Interactive holiday packages and categorized destination browsing",
-      "Instant inquiry and custom itinerary request forms",
-      "Optimized media delivery and responsive travel imagery",
-      "Engaging UI with fluid transitions and modern typography"
-    ]
-  },
-  {
-    id: "salmara-ayurveda",
-    title: "Salmara Ayurveda",
-    liveUrl: "https://salmaraayurveda.com/",
-    image: "/assets/projects/salmara-ayurveda.jpg",
-    category: "E-Commerce",
-    badge: "Shopify Store",
-    techStack: ["Shopify", "React.js", "Next.js", "Node.js", "Supabase"],
-    shortDesc:
-      "Premium Ayurvedic wellness e-commerce storefront with live inventory sync, product catalog, and seamless checkout.",
-    fullDesc:
-      "Salmara Ayurveda is an end-to-end wellness e-commerce platform built with Next.js and Shopify APIs. Features intuitive storefronts with fast search, product categories, reviews, and automated inventory sync with Supabase and Node.js.",
-    features: [
-      "Shopify Headless API integration for product catalog and checkout",
-      "Admin inventory management with Supabase real-time updates",
-      "Lighthouse 95+ score with optimized speed and technical SEO",
-      "Clean, modern responsive UI tailored for Ayurvedic products"
-    ]
-  },
-  {
-    id: "kalangara-paints",
-    title: "Kalangara Paints",
-    liveUrl: "https://www.kalangarapaints.com/",
-    image: "/assets/projects/kalangara-paints.jpg",
-    category: "Corporate & Retail",
-    badge: "Industrial Brand",
-    techStack: ["React.js", "Node.js", "Express.js", "Tailwind CSS"],
-    shortDesc:
-      "Digital catalogue, color shade visualizer, and dealer locator for a premier decorative and industrial paint brand.",
-    fullDesc:
-      "Kalangara Paints is a corporate manufacturer and retail platform presenting extensive product ranges for interior, exterior, and industrial coatings with technical specifications and dealer network information.",
-    features: [
-      "Product categorization by surface, finish, and industrial application",
-      "Interactive color shade visualizer and technical data sheets",
-      "Dealer network and direct quotation inquiry system",
-      "Clean corporate design system with responsive layouts"
-    ]
-  },
-  {
-    id: "chillmaster-uae",
-    title: "Chillmaster UAE",
-    liveUrl: "https://www.chillmasteruae.com/",
-    image: "/assets/projects/chillmaster-uae.jpg",
-    category: "Corporate & Services",
-    badge: "UAE Services",
-    techStack: ["Next.js", "React.js", "Tailwind CSS", "Responsive UI"],
-    shortDesc:
-      "Commercial HVAC, refrigeration, and cooling engineering services platform serving clients across the UAE.",
-    fullDesc:
-      "Chillmaster UAE is a commercial engineering services web application providing service booking, technical solution catalogs, client project showcases, and rapid quotation requests for cooling and HVAC systems in Dubai and across the UAE.",
-    features: [
-      "Service inquiry and quotation request workflows",
-      "Commercial and residential HVAC project showcases",
-      "Mobile-optimized emergency service contact integration",
-      "High performance on Vercel with localized SEO metadata"
-    ]
-  },
+
+
+
+
+
   {
     id: "choco-mint",
     title: "Choco Mint",
