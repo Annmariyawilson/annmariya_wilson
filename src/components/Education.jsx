@@ -41,13 +41,7 @@ const Education = () => {
             </div>
           </div>
           
-          <div style={{ flex: 1, minWidth: '300px' }}>
-            <img 
-              src="/assets/education/excellence_award.jpg" 
-              alt="Excellence Award" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-card)' }} 
-            />
-          </div>
+
         </div>
       </div>
     </section>
