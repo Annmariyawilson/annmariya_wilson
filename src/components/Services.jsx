@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, Smartphone, Server, Layers, Sparkles } from 'lucide-react';
+import SectionHeader from './SectionHeader';
 
 const services = [
   {
@@ -28,16 +29,13 @@ const Services = () => {
   return (
     <section className="section services-section" id="services">
       <div className="container">
-        <div className="section-header">
-          <span className="section-tag">
-            <Sparkles size={13} />
-            <span>What I Do</span>
-          </span>
-          <h2 className="section-title">Services & Capabilities</h2>
-          <p className="section-desc">
-            End-to-end engineering expertise delivering polished digital products from concept to cloud deployment.
-          </p>
-        </div>
+        <SectionHeader 
+          title="Services & Capabilities" 
+          subtitle="End-to-end engineering expertise delivering polished digital products from concept to cloud deployment."
+          alignment="left"
+          tag="What I Do"
+          Icon={Sparkles}
+        />
 
         <div className="services-grid">
           {services.map((item, idx) => {

@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, ExternalLink } from 'lucide-react';
 
 const ProjectModal = ({ project, onClose }) => {
+  // Prevent scrolling on body when modal is open
+  useEffect(() => {
+    if (project) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [project]);
+
   if (!project) return null;
 
   return (
     <div
-      className="modal-backdrop active"
-      id="projectModal"
+      className="modal-backdrop fade-up"
       onClick={onClose}
       aria-hidden="false"
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="modal-dialog"
+        className="modal-dialog glass-panel"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -22,7 +33,7 @@ const ProjectModal = ({ project, onClose }) => {
           onClick={onClose}
           aria-label="Close modal"
         >
-          <X size={18} />
+          <X size={20} />
         </button>
 
         {project.image && (
@@ -35,41 +46,43 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         )}
 
-        <span className="modal-category">{project.category}</span>
-        <h3 className="modal-title serif-heading">{project.title}</h3>
-        <p className="modal-desc">{project.fullDesc}</p>
+        <div className="modal-content-inner">
+          <span className="section-tag" style={{ marginBottom: '1rem', padding: '0.3rem 0.8rem', fontSize: '0.65rem' }}>{project.category}</span>
+          <h3 className="modal-title serif-heading">{project.title}</h3>
+          <p className="modal-desc">{project.fullDesc}</p>
 
-        <h4 className="modal-section-title">Key Architectural Features & Highlights:</h4>
-        <ul className="modal-features-list">
-          {project.features.map((feature, fIdx) => (
-            <li key={fIdx}>{feature}</li>
-          ))}
-        </ul>
+          <h4 className="modal-section-title">Key Highlights:</h4>
+          <ul className="modal-features-list">
+            {project.features.map((feature, fIdx) => (
+              <li key={fIdx}>{feature}</li>
+            ))}
+          </ul>
 
-        <h4 className="modal-section-title">Technologies Used:</h4>
-        <div className="project-tags-list" style={{ marginBottom: '1.75rem' }}>
-          {project.techStack.map((tech, tIdx) => (
-            <span key={tIdx} className="project-tag-item">
-              {tech}
-            </span>
-          ))}
-        </div>
+          <h4 className="modal-section-title">Technologies Used:</h4>
+          <div className="project-tags-list">
+            {project.techStack.map((tech, tIdx) => (
+              <span key={tIdx} className="tech-tag">
+                {tech}
+              </span>
+            ))}
+          </div>
 
-        <div className="modal-footer">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-sage btn-sm"
-            >
-              <span>Visit Live Website</span>
-              <ExternalLink size={14} />
-            </a>
-          )}
-          <button className="btn btn-outline-editorial btn-sm" onClick={onClose}>
-            Close
-          </button>
+          <div className="modal-footer">
+            {project.liveUrl && project.liveUrl !== '#' && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-sage"
+              >
+                <span>Visit Live Website</span>
+                <ExternalLink size={16} />
+              </a>
+            )}
+            <button className="btn btn-outline-editorial" onClick={onClose}>
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>

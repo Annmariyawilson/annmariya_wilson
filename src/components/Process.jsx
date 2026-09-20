@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SectionHeader from './SectionHeader';
 const steps = [
   {
     num: "01",
@@ -27,10 +27,11 @@ const Process = () => {
   return (
     <section className="section process-section" id="process">
       <div className="container">
-        <div className="section-header">
-          <span className="section-tag">My Process</span>
-          <h2 className="section-title">How I Work</h2>
-        </div>
+        <SectionHeader 
+          title="How I Work" 
+          tag="My Process"
+          alignment="left"
+        />
 
         <div className="process-steps-row">
           {steps.map((step, idx) => (

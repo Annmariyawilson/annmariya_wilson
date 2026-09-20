@@ -28,21 +28,11 @@ const ScrollProgress = () => {
   };
 
   return (
-    <>
-      <div
-        className="scroll-progress-bar"
-        style={{ width: `${scrollProgress}%` }}
-        aria-hidden="true"
-      />
-      <button
-        className={`back-to-top-btn ${showBackToTop ? 'visible' : ''}`}
-        onClick={scrollToTop}
-        aria-label="Scroll back to top"
-        title="Scroll to top"
-      >
-        <ArrowUp size={18} />
-      </button>
-    </>
+    <div
+      className="scroll-progress-bar"
+      style={{ width: `${scrollProgress}%` }}
+      aria-hidden="true"
+    />
   );
 };
 

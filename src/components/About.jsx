@@ -1,93 +1,50 @@
 import React from 'react';
-import { GraduationCap, Award, CheckCircle2, Terminal, ShieldCheck, Zap, Sparkles } from 'lucide-react';
-import { personalInfo, education, certifications } from '../data/portfolioData';
+import { Sparkles, Terminal, Globe, Cpu } from 'lucide-react';
+import { personalInfo } from '../data/portfolioData';
+import SectionHeader from './SectionHeader';
 
 const About = () => {
   return (
-    <section className="section about-section" id="about">
+    <section className="section" id="about">
       <div className="container">
-        <div className="section-header text-center">
-          <span className="section-tag">
-            <Sparkles size={13} />
-            <span>Professional Background</span>
-          </span>
-          <h2 className="section-title">About Me & Qualifications</h2>
-          <p className="section-desc">
-            Bridging frontend visual polish with resilient backend architectures to deliver comprehensive, production-ready web applications.
+        <SectionHeader 
+          title="About Me" 
+          subtitle="A closer look at my background, philosophy, and what drives my engineering process."
+          alignment="center"
+          tag="Introduction"
+          Icon={Sparkles}
+          className="fade-up"
+        />
+
+        <div className="about-card fade-up" style={{ padding: '3rem' }}>
+          <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--text-primary)', marginBottom: '2rem' }}>
+            {personalInfo.summary}
           </p>
-        </div>
-
-        <div className="about-grid">
-          {/* Summary & Core Competencies */}
-          <div className="about-card glass-panel">
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
             <div>
-              <h3 className="serif-heading" style={{ fontSize: '1.6rem', marginBottom: '1rem' }}>
-                Full Stack Development Philosophy
-              </h3>
-              <p className="about-summary-p">{personalInfo.summary}</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                <Terminal size={20} color="var(--accent-primary)" />
+                <h4 style={{ fontSize: '1.1rem', color: 'var(--text-primary)' }}>Clean Architecture</h4>
+              </div>
+              <p style={{ color: 'var(--text-secondary)' }}>Focus on writing modular, maintainable, and highly optimized code structures.</p>
             </div>
-
-            <div className="about-highlights">
-              <div className="about-highlight-item">
-                <CheckCircle2 size={20} color="#31572c" />
-                <span>MERN & MEAN Stack Architecture</span>
+            
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                <Globe size={20} color="var(--accent-primary)" />
+                <h4 style={{ fontSize: '1.1rem', color: 'var(--text-primary)' }}>Global Standards</h4>
               </div>
-              <div className="about-highlight-item">
-                <ShieldCheck size={20} color="#4f772d" />
-                <span>JWT & Role-Based Access Control</span>
-              </div>
-              <div className="about-highlight-item">
-                <Terminal size={20} color="#31572c" />
-                <span>RESTful APIs & CRUD Pipelines</span>
-              </div>
-              <div className="about-highlight-item">
-                <Zap size={20} color="#90a955" />
-                <span>AI Workflow Acceleration</span>
-              </div>
+              <p style={{ color: 'var(--text-secondary)' }}>Adhering to web accessibility and modern SEO performance best practices.</p>
             </div>
-          </div>
-
-          {/* Education & Certifications */}
-          <div className="edu-cert-stack">
-            {/* Education */}
-            {education.map((edu, idx) => (
-              <div key={idx} className="glass-panel edu-card">
-                <div className="edu-cert-header">
-                  <div className="edu-icon-wrap">
-                    <GraduationCap size={22} />
-                  </div>
-                  <div>
-                    <h4 className="edu-title serif-heading">{edu.degree}</h4>
-                    <span className="edu-institution">{edu.institution}</span>
-                  </div>
-                </div>
-                <div className="edu-meta">
-                  <span>📅 {edu.period}</span>
-                  <span>📍 {edu.location}</span>
-                </div>
-                <p className="edu-desc">{edu.description}</p>
+            
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                <Cpu size={20} color="var(--accent-primary)" />
+                <h4 style={{ fontSize: '1.1rem', color: 'var(--text-primary)' }}>AI Integration</h4>
               </div>
-            ))}
-
-            {/* Certification */}
-            {certifications.map((cert, idx) => (
-              <div key={idx} className="glass-panel cert-card">
-                <div className="edu-cert-header">
-                  <div className="edu-icon-wrap">
-                    <Award size={22} />
-                  </div>
-                  <div>
-                    <h4 className="edu-title serif-heading">{cert.title}</h4>
-                    <span className="edu-institution">{cert.issuer}</span>
-                  </div>
-                </div>
-                <div className="edu-meta">
-                  <span>📅 {cert.period}</span>
-                  <span>📍 {cert.location}</span>
-                </div>
-                <p className="edu-desc">{cert.description}</p>
-              </div>
-            ))}
+              <p style={{ color: 'var(--text-secondary)' }}>Leveraging advanced AI workflows to accelerate development and deliver smarter features.</p>
+            </div>
           </div>
         </div>
       </div>

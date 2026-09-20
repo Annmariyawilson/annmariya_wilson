@@ -11,7 +11,6 @@ const Navbar = () => {
     <header className="site-header" id="siteHeader">
       <div className="nav-container">
         <a href="#hero" className="brand-logo" id="brandLogo" onClick={closeMenu}>
-          <span className="logo-symbol">AW</span>
           <div className="logo-text-group">
             <span className="logo-text">{personalInfo.name}</span>
             <span className="logo-sub">Full Stack Developer</span>
@@ -34,13 +33,13 @@ const Navbar = () => {
           <a href="#services" className="nav-link" onClick={closeMenu}>
             Services
           </a>
-          <a href="#contact" className="btn btn-sage btn-sm" onClick={closeMenu}>
-            <span>Let's Talk</span>
-            <ArrowUpRight size={14} />
-          </a>
         </nav>
 
         <div className="nav-actions">
+          <a href="#contact" className="btn btn-sage btn-sm desktop-cta" onClick={closeMenu}>
+            <span>Let's Talk</span>
+            <ArrowUpRight size={14} />
+          </a>
           <button
             className="mobile-toggle"
             id="mobileMenuBtn"

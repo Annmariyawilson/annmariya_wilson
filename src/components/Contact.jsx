@@ -1,162 +1,68 @@
-import React, { useState } from 'react';
-import { Mail, MapPin, Send, Copy, Check, ArrowRight, ExternalLink } from 'lucide-react';
+import React from 'react';
+import { Mail, MapPin, Send, Sparkles } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
-import { GitHubIcon, LinkedInIcon } from './Icons';
+import SectionHeader from './SectionHeader';
 
 const Contact = () => {
-  const [copied, setCopied] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [toastMessage, setToastMessage] = useState('');
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setToastMessage('✨ Thank you! Your inquiry has been sent.');
-      setFormData({ name: '', email: '', message: '' });
-
-      setTimeout(() => {
-        setToastMessage('');
-      }, 5000);
-    }, 600);
-  };
-
   return (
-    <section className="contact-section" id="contact">
+    <section className="section" id="contact">
       <div className="container">
-        <div className="contact-card-banner">
-          <div className="contact-left-col">
-            <span className="section-tag">Let's Create Something Great</span>
-            <h2 className="contact-large-title serif-heading">
-              Have a project in mind?<br />I'd love to hear about it.
-            </h2>
-            <p className="section-desc">
-              Looking for a dedicated Full Stack Developer (React.js, Next.js, Node.js) for your team in Dubai, UAE or globally remote? Let's connect.
-            </p>
-
-            <div className="contact-channels-row">
-              <div className="contact-channel-item">
-                <div className="contact-channel-icon">
-                  <Mail size={18} />
+        <div className="contact-card-banner fade-up">
+          <div>
+            <SectionHeader
+              tag="Get In Touch"
+              Icon={Sparkles}
+              title={
+                <>
+                  Let's build something <span className="serif-italic-accent">extraordinary.</span>
+                </>
+              }
+              subtitle="I'm currently available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+              alignment="left"
+            />
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <div className="floating-icon" style={{ position: 'relative', width: '45px', height: '45px', animation: 'none' }}>
+                  <Mail size={20} />
                 </div>
                 <div>
-                  <span className="contact-channel-label">Email</span>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                    <a href={`mailto:${personalInfo.email}`} className="contact-channel-val">
-                      {personalInfo.email}
-                    </a>
-                    <button
-                      onClick={handleCopyEmail}
-                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#31572c', display: 'flex', alignItems: 'center' }}
-                      title="Copy email"
-                    >
-                      {copied ? <Check size={14} /> : <Copy size={14} />}
-                    </button>
-                  </div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Email</div>
+                  <a href={`mailto:${personalInfo.email}`} style={{ color: 'var(--text-primary)', textDecoration: 'none', fontSize: '1.1rem', fontWeight: '500' }}>{personalInfo.email}</a>
                 </div>
               </div>
-
-              <div className="contact-channel-item">
-                <div className="contact-channel-icon">
-                  <MapPin size={18} />
+              
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <div className="floating-icon" style={{ position: 'relative', width: '45px', height: '45px', animation: 'none' }}>
+                  <MapPin size={20} />
                 </div>
                 <div>
-                  <span className="contact-channel-label">Location</span>
-                  <span className="contact-channel-val">{personalInfo.location}</span>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Location</div>
+                  <div style={{ color: 'var(--text-primary)', fontSize: '1.1rem', fontWeight: '500' }}>{personalInfo.location}</div>
                 </div>
               </div>
-            </div>
-
-            <div className="contact-social-row">
-              <a
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon-btn"
-                title="GitHub Profile"
-              >
-                <GitHubIcon size={18} />
-              </a>
-
-              <a
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon-btn"
-                title="LinkedIn Profile"
-              >
-                <LinkedInIcon size={18} />
-              </a>
-
-              <a
-                href={personalInfo.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon-btn"
-                title="Vercel Live App"
-              >
-                <ExternalLink size={18} />
-              </a>
             </div>
           </div>
 
           <div className="contact-form-card">
-            <form onSubmit={handleSubmit}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Send a Message</h3>
+            <form onSubmit={(e) => e.preventDefault()}>
               <div className="form-group">
-                <label htmlFor="contactName">Your Name</label>
-                <input
-                  type="text"
-                  id="contactName"
-                  placeholder="e.g. Alex Morgan"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                />
+                <label className="form-label">Name</label>
+                <input type="text" className="form-control" placeholder="John Doe" />
               </div>
-
               <div className="form-group">
-                <label htmlFor="contactEmail">Your Email</label>
-                <input
-                  type="email"
-                  id="contactEmail"
-                  placeholder="alex@company.com"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                />
+                <label className="form-label">Email</label>
+                <input type="email" className="form-control" placeholder="john@example.com" />
               </div>
-
               <div className="form-group">
-                <label htmlFor="contactMessage">Your Message</label>
-                <textarea
-                  id="contactMessage"
-                  rows="4"
-                  placeholder="Tell me about your project or role..."
-                  required
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                ></textarea>
+                <label className="form-label">Message</label>
+                <textarea className="form-control" rows="4" placeholder="How can I help you?"></textarea>
               </div>
-
-              <button type="submit" className="btn btn-sage btn-block" disabled={isSubmitting}>
-                <span>{isSubmitting ? 'Sending...' : "Let's Talk"}</span>
-                <ArrowRight size={15} />
+              <button className="btn btn-sage" style={{ width: '100%', marginTop: '1rem' }}>
+                <span>Send Message</span>
+                <Send size={16} />
               </button>
-
-              {toastMessage && (
-                <div className="form-toast" role="alert">
-                  {toastMessage}
-                </div>
-              )}
             </form>
           </div>
         </div>

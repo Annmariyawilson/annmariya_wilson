@@ -1,44 +1,15 @@
 import React, { useState } from 'react';
-import {
-  ExternalLink,
-  Info,
-  GraduationCap,
-  Compass,
-  Sparkles,
-  Palette,
-  Wind,
-  Cookie,
-  Newspaper,
-  UtensilsCrossed,
-  TrendingUp,
-  Layers,
-  ShieldCheck,
-  Building2
-} from 'lucide-react';
+import { ExternalLink, Info, Sparkles } from 'lucide-react';
 import { projects } from '../data/portfolioData';
 import ProjectModal from './ProjectModal';
-
-const iconLookup = {
-  'holycross-college': GraduationCap,
-  'day-off-journeys': Compass,
-  'salmara-ayurveda': Sparkles,
-  'kalangara-paints': Palette,
-  'chillmaster-uae': Wind,
-  'choco-mint': Cookie,
-  'true-news': Newspaper,
-  'amilas-masala-paste': UtensilsCrossed,
-  'trade-learners': TrendingUp,
-  'phoenix-platform': Layers,
-  'security-spy': ShieldCheck,
-  'ar-architects': Building2
-};
+import SectionHeader from './SectionHeader';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = [
-    { label: 'All Projects (12)', value: 'all' },
+    { label: 'All Projects', value: 'all' },
     { label: 'E-Commerce', value: 'e-commerce' },
     { label: 'Corporate & Services', value: 'corporate' },
     { label: 'Institutional & EdTech', value: 'institutional' },
@@ -52,7 +23,7 @@ const Projects = () => {
       return proj.category.toLowerCase().includes('e-commerce') || proj.id.includes('salmara') || proj.id.includes('amila');
     }
     if (filter === 'corporate') {
-      return proj.category.toLowerCase().includes('corporate') || proj.category.toLowerCase().includes('saas') || proj.id.includes('chillmaster') || proj.id.includes('kalangara') || proj.id.includes('phoenix');
+      return proj.category.toLowerCase().includes('corporate') || proj.category.toLowerCase().includes('saas') || proj.category.toLowerCase().includes('fintech') || proj.id.includes('chillmaster') || proj.id.includes('kalangara') || proj.id.includes('phoenix') || proj.id.includes('zyvest');
     }
     if (filter === 'institutional') {
       return proj.category.toLowerCase().includes('institutional') || proj.category.toLowerCase().includes('edtech') || proj.id.includes('holycross') || proj.id.includes('trade');
@@ -67,108 +38,81 @@ const Projects = () => {
   });
 
   return (
-    <section className="section projects-section" id="projects">
+    <section className="section" id="projects">
       <div className="container">
-        <div className="header-split">
+        <div className="header-split fade-up">
           <div>
-            <span className="section-tag">
-              <Sparkles size={13} />
-              <span>Selected Work</span>
-            </span>
-            <h2 className="section-title">Featured Projects</h2>
-            <p className="section-desc">
-              A collection of live commercial web applications, e-commerce storefronts, institutional portals, and SaaS platforms built with modern full-stack technologies.
-            </p>
+            <SectionHeader 
+              title="Featured Projects" 
+              subtitle="Live commercial web applications, e-commerce storefronts, and SaaS platforms built with modern full-stack technologies."
+              alignment="left"
+              tag="Selected Work"
+              Icon={Sparkles}
+            />
           </div>
 
-          <div className="filter-controls">
-            {categories.map((cat) => (
-              <button
-                key={cat.value}
-                className={`filter-btn ${filter === cat.value ? 'active' : ''}`}
-                onClick={() => setFilter(cat.value)}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
+
         </div>
 
         <div className="projects-grid">
-          {filteredProjects.map((project, idx) => {
-            const Icon = iconLookup[project.id] || Sparkles;
+          {filteredProjects.map((project) => (
+            <article key={project.id} className="project-card fade-up">
+              <div className="project-img-wrap" onClick={() => setSelectedProject(project)} style={{ cursor: 'pointer' }}>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="project-img" loading="lazy" />
+                ) : (
+                  <div className="project-img" style={{ background: 'var(--bg-glass)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Sparkles size={40} color="var(--accent-primary)" opacity={0.3} />
+                  </div>
+                )}
+                <div className="project-overlay">
+                  <button className="btn btn-sage" onClick={() => setSelectedProject(project)}>View Details</button>
+                </div>
+              </div>
 
-            return (
-              <article key={project.id} className="project-card">
-                <div className="project-thumbnail" onClick={() => setSelectedProject(project)} style={{ cursor: 'pointer' }}>
-                  <span className="project-card-badge">{project.badge}</span>
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="project-card-img"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="thumbnail-icon-wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-                      <Icon size={44} />
-                    </div>
-                  )}
-                  <div className="project-card-overlay" />
+              <div className="project-body">
+                <div style={{ color: 'var(--accent-primary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>
+                  {project.category}
+                </div>
+                <h3 className="project-heading" onClick={() => setSelectedProject(project)} style={{ cursor: 'pointer' }}>
+                  {project.title}
+                </h3>
+                <p className="project-desc">{project.shortDesc}</p>
+
+                <div className="project-footer-row" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                  {project.techStack.slice(0, 4).map((tech, idx) => (
+                    <span key={idx} className="tech-tag">{tech}</span>
+                  ))}
                 </div>
 
-                <div className="project-body">
-                  <div className="project-client-cat">{project.category}</div>
-                  <h3
-                    className="project-heading serif-heading"
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
+                  <button
                     onClick={() => setSelectedProject(project)}
-                    style={{ cursor: 'pointer' }}
+                    style={{ background: 'transparent', border: 'none', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}
                   >
-                    {project.title}
-                  </h3>
-                  <p className="project-desc">{project.shortDesc}</p>
-
-                  <div className="project-tags-list">
-                    {project.techStack.slice(0, 4).map((tech, tIdx) => (
-                      <span key={tIdx} className="project-tag-item">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="project-footer-row">
-                    <button
-                      className="project-view-link"
-                      onClick={() => setSelectedProject(project)}
+                    <Info size={14} />
+                    <span style={{ fontSize: '0.85rem' }}>Details</span>
+                  </button>
+                  
+                  {project.liveUrl && project.liveUrl !== '#' && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--accent-primary)', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '500' }}
                     >
-                      <Info size={14} />
-                      <span>Details</span>
-                    </button>
-
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-live-btn"
-                        title={`Visit ${project.title}`}
-                      >
-                        <span>Visit Live</span>
-                        <ExternalLink size={12} />
-                      </a>
-                    )}
-                  </div>
+                      <span>Visit Live</span>
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
                 </div>
-              </article>
-            );
-          })}
+              </div>
+            </article>
+          ))}
         </div>
       </div>
 
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
+      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </section>
   );
 };

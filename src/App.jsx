@@ -11,10 +11,17 @@ import Services from './components/Services';
 import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Education from './components/Education';
 
 function App() {
   return (
-    <>
+    <div className="app-container">
+      {/* Animated Background Orbs */}
+      <div className="bg-orb orb-1"></div>
+      <div className="bg-orb orb-2"></div>
+      <div className="bg-orb orb-3"></div>
+      <div className="bg-noise"></div>
+
       <ScrollProgress />
       <Navbar />
       <main id="mainContent">
@@ -22,6 +29,7 @@ function App() {
         <Projects />
         <Skills />
         <Experience />
+        <Education />
         <StatsStrip />
         <About />
         <Services />
@@ -29,7 +37,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

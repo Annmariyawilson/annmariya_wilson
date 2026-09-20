@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Annmariya Wilson",
   role: "Full Stack Developer",
-  avatar: "/assets/hero/annmariya-hero.jpg",
-  subtitles: ["React.js", "Next.js", "Node.js", "Express.js", "MERN / MEAN"],
-  tagline: "Building scalable web applications, e-commerce platforms, and seamless full-stack digital experiences.",
+  avatar: "/assets/hero/annmariya-wilsom-profile-img.png",
+  subtitles: ["Frontend Developer", "AI-Assisted Development"],
+  tagline: "Building responsive web applications, SaaS platforms, and seamless full-stack digital experiences.",
   email: "annmariyawilson04@gmail.com",
   location: "Dubai, UAE",
   github: "https://github.com/Annmariyawilson",
@@ -12,10 +12,10 @@ export const personalInfo = {
   linkedinUsername: "annmariya-wilson",
   liveUrl: "https://annmariyawilson.vercel.app",
   summary:
-    "Full Stack Developer with 2 years of experience building responsive, production-ready web applications using React.js, Next.js, Angular, Node.js, Express.js, MongoDB and REST APIs. Skilled in MERN/MEAN development, reusable UI components, authentication, API integration and performance optimization. Experienced with Cursor and Antigravity for AI-assisted development.",
+    "Full Stack Developer with 2+ years of experience building responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions. Hands-on experience with React.js, Next.js, Angular, Node.js, Express.js, MongoDB, REST APIs, authentication, RBAC, and responsive UI development. Experienced in AI-assisted software development using Cursor and Antigravity, with a focus on reusable components, API integration, performance, and user experience.",
   stats: [
-    { label: "Years Experience", value: "2" },
-    { label: "Live Client Projects", value: "12+" },
+    { label: "Years Experience", value: "2+" },
+    { label: "Live Client Projects", value: "10+" },
     { label: "Tech Stack Modules", value: "15+" },
     { label: "Client Satisfaction", value: "100%" }
   ]
@@ -29,7 +29,7 @@ export const technicalSkills = {
       { name: "React.js", level: "Expert" },
       { name: "Next.js", level: "Expert" },
       { name: "Angular", level: "Advanced" },
-      { name: "JavaScript (ES6+)", level: "Expert" },
+      { name: "JavaScript", level: "Expert" },
       { name: "TypeScript", level: "Advanced" },
       { name: "HTML5 & CSS3", level: "Expert" },
       { name: "Tailwind CSS", level: "Expert" },
@@ -50,7 +50,7 @@ export const technicalSkills = {
     ]
   },
   database: {
-    category: "Database Management",
+    category: "Databases",
     icon: "Database",
     skills: [
       { name: "MongoDB", level: "Advanced" },
@@ -76,18 +76,17 @@ export const technicalSkills = {
     icon: "Sparkles",
     skills: [
       { name: "Cursor AI", level: "Expert" },
-      { name: "Antigravity", level: "Expert" },
-      { name: "AI Prompt Engineering", level: "Advanced" }
+      { name: "Antigravity", level: "Expert" }
     ]
   },
   other: {
-    category: "E-Commerce & Optimization",
+    category: "Other Skills",
     icon: "Cpu",
     skills: [
-      { name: "Shopify API Integration", level: "Advanced" },
+      { name: "Shopify", level: "Advanced" },
+      { name: "API Integration", level: "Expert" },
       { name: "Performance Optimization", level: "Expert" },
-      { name: "SEO Optimization", level: "Advanced" },
-      { name: "Vercel Deployment", level: "Expert" }
+      { name: "SEO", level: "Advanced" }
     ]
   }
 };
@@ -100,11 +99,10 @@ export const experiences = [
     location: "Kakkanad, Kerala",
     type: "Full-Time",
     highlights: [
-      "Developed responsive web interfaces and reusable UI components using HTML, CSS and JavaScript.",
-      "Converted UI/UX designs into functional responsive interfaces and collaborated with developers on testing and debugging.",
-      "Ensured high cross-browser compatibility and optimized user journey flows."
+      "Developed responsive web interfaces and reusable UI components using HTML, CSS, and JavaScript.",
+      "Translated UI/UX designs into functional interfaces and collaborated on testing and debugging."
     ],
-    tags: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Responsive Design"]
+    tags: ["HTML", "CSS", "JavaScript", "UI/UX", "Responsive Design"]
   },
   {
     company: "THINK FORGE GLOBAL LLP",
@@ -113,12 +111,12 @@ export const experiences = [
     location: "Malappuram, Kerala",
     type: "Full-Time",
     highlights: [
-      "Developed responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions using React.js, Next.js and Node.js.",
-      "Built reusable UI components, interactive dashboards, robust authentication, RBAC, and REST API integrations.",
-      "Worked extensively with MongoDB, MySQL, Supabase, and Shopify; optimized overall web performance and responsiveness.",
-      "Collaborated smoothly using Git, Bitbucket, Slack, and Jira within fast-paced Agile sprint environments."
+      "Built responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions with React.js, Next.js, and Node.js.",
+      "Implemented reusable components, dashboards, authentication, RBAC, and REST API integrations.",
+      "Worked with MongoDB, MySQL, Supabase, and Shopify; supported performance and responsive-design improvements.",
+      "Collaborated with Git, Bitbucket, Slack, and Jira in Agile/Scrum environments."
     ],
-    tags: ["React.js", "Next.js", "Node.js", "MongoDB", "Supabase", "Shopify", "RBAC", "Agile"]
+    tags: ["React.js", "Next.js", "Node.js", "MongoDB", "Supabase", "Shopify", "Agile"]
   },
   {
     company: "FREELANCE",
@@ -127,15 +125,128 @@ export const experiences = [
     location: "Remote",
     type: "Freelance",
     highlights: [
-      "Developed a complete College Management System utilizing Angular, Node.js, Express.js, and MongoDB.",
-      "Implemented secure JWT authentication, role-based access control, CRUD operations, responsive dashboards, and REST APIs.",
-      "Managed client communication, architectural planning, and end-to-end delivery."
+      "Developed a College Management System with Angular, Node.js, Express.js, and MongoDB.",
+      "Implemented JWT authentication, RBAC, CRUD operations, responsive dashboards, and REST APIs."
     ],
     tags: ["Angular", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs"]
   }
 ];
 
 export const projects = [
+  {
+    id: "yacht-hub-dubai",
+    title: "Yacht Hub Dubai",
+    liveUrl: "https://www.yachthubdubai.com/",
+    image: "/assets/projects/yacht-hub-dubai.jpg", 
+    category: "Travel & Hospitality",
+    badge: "Luxury Rental",
+    techStack: ["Next.js", "Tailwind CSS"],
+    shortDesc:
+      "Premium luxury yacht rental platform in Dubai offering curated fleet bookings and experiential packages.",
+    fullDesc:
+      "Yacht Hub Dubai is a luxury yacht rental platform that allows users to seamlessly book premium yachts in Dubai. The platform features an extensive fleet catalog, experiential packages for corporate events and private parties, and a streamlined online reservation system.",
+    features: [
+      "Extensive premium fleet catalogue with detailed vessel specifications",
+      "Flexible hourly, half-day, and full-day booking packages",
+      "Specialized event experiences and tailored itineraries",
+      "High performance, fully responsive UI built with Next.js and Tailwind CSS"
+    ]
+  },
+  {
+    id: "frootcane",
+    title: "Frootcane",
+    liveUrl: "https://www.frootcane.com/",
+    image: "/assets/projects/frootcane.jpg", 
+    category: "Food & Hospitality",
+    badge: "F&B Brand",
+    techStack: ["Next.js", "Tailwind CSS"],
+    shortDesc:
+      "Digital storefront for a premium sugarcane juice brand, featuring an interactive menu, location finder, and gallery.",
+    fullDesc:
+      "Frootcane is a modern digital presence for a fresh sugarcane juice brand based in Guruvayoor. The web application features an interactive categorised digital menu showcasing 22+ flavours, a gallery of storefront moments, location finding integration, and a direct contact system for bulk ordering.",
+    features: [
+      "Interactive digital menu with categorized flavor profiles (Classics, Spicy, Healthy)",
+      "Responsive gallery and physical storefront location finder with map integration",
+      "Fast page loads and SEO optimization powered by Next.js",
+      "Direct communication channels via WhatsApp and contact forms"
+    ]
+  },
+  {
+    id: "depro-trading",
+    title: "Depro Trading",
+    liveUrl: "https://www.deprotrading.com/",
+    image: "/assets/projects/depro-trading.jpg", 
+    category: "Corporate & Services",
+    badge: "Hardware Solutions",
+    techStack: ["Next.js", "Tailwind CSS", "React.js"],
+    shortDesc:
+      "B2B and B2C digital platform for premium interior hardware, aluminum fabrication, and wholesale supply.",
+    fullDesc:
+      "Depro Trading is a comprehensive digital portal for a premium hardware supplier based in Kerala. It showcases product catalogs, features a dynamic service roadmap, wholesale partnerships, and detailed service offerings across aluminum fabrication and interior works. Built for lead generation and client consultation bookings.",
+    features: [
+      "Detailed service and product catalog presentation",
+      "Streamlined consultation and B2B inquiry workflows",
+      "Integration with WhatsApp for instant client communication",
+      "Performant architecture tailored for B2B SEO and rapid loading"
+    ]
+  },
+  {
+    id: "echo-hearing-aid",
+    title: "Echo Hearing Aid",
+    liveUrl: "https://www.echohearingaid.com/",
+    image: "/assets/projects/echo-hearing-aid.jpg", 
+    category: "Corporate & Services",
+    badge: "Healthcare Clinic",
+    techStack: ["React.js", "Tailwind CSS"],
+    shortDesc:
+      "Healthcare digital platform for a professional audiology clinic, featuring service bookings and WhatsApp integrations.",
+    fullDesc:
+      "Echo Hearing Aid is a professional healthcare web platform built for a specialized audiology clinic in Kerala. It features an elegant presentation of clinical services, a structured patient onboarding roadmap, dedicated home visit booking workflows, and deep WhatsApp integration for instant patient consultations.",
+    features: [
+      "Comprehensive clinical service presentation and booking workflows",
+      "Integrated WhatsApp consultation routing for quick patient access",
+      "Trust-building sections including patient roadmap and lifetime care highlights",
+      "Highly accessible, clean interface tailored for healthcare demographics"
+    ]
+  },
+  {
+    id: "beauty-world",
+    title: "Beauty World Family Lounge",
+    liveUrl: "https://beautyworldfamilylounge.in/home",
+    image: "/assets/projects/beauty-world.jpg", 
+    category: "Institutional & EdTech",
+    badge: "Beauty Academy",
+    techStack: ["React.js", "Tailwind CSS"],
+    shortDesc:
+      "Premium beauty, wellness, and training destination offering professional salon services and certified career-oriented courses.",
+    fullDesc:
+      "Beauty World Family Lounge is a premium beauty and wellness digital platform based in Kerala. The application serves as both a booking portal for professional salon services and an educational gateway for government-certified beautician, fashion designing, tailoring, and Zumba courses.",
+    features: [
+      "Integrated course application system for vocational beauty training",
+      "Real-time salon service discovery and consultation forms",
+      "Multi-disciplinary academy modules including Fashion Design and Zumba",
+      "Direct WhatsApp integration and responsive mobile-first design"
+    ]
+  },
+  {
+    id: "zyvest-capital",
+    title: "Zyvest Capital",
+    liveUrl: "#",
+    image: "/assets/projects/zyvest-capital.jpg",
+    category: "FinTech",
+    badge: "Trading Platform",
+    techStack: ["Next.js", "Tailwind CSS", "REST APIs"],
+    shortDesc:
+      "A responsive trading platform with multi-role modules including KYC, wallet management, and MT5 account creation.",
+    fullDesc:
+      "Built a responsive trading platform with multi-role User, Admin, Employee, and Super Admin modules; implemented onboarding, KYC, wallet management, MT5 account creation, transactions, PAMM investment, team management, support, marketing, and administrative workflows.",
+    features: [
+      "Multi-role modules: User, Admin, Employee, Super Admin",
+      "Onboarding, KYC, and MT5 account creation",
+      "Wallet management and transactions",
+      "PAMM investment and team management workflows"
+    ]
+  },
   {
     id: "holycross-college",
     title: "Holy Cross College",
@@ -379,9 +490,9 @@ export const education = [
 
 export const certifications = [
   {
-    title: "MERN / MEAN Full Stack Web Development",
+    title: "MERN/MEAN Full Stack Web Development",
     issuer: "Luminar Technolab",
-    period: "2024/05 – 2024/12",
+    period: "2024",
     location: "Calicut, Kerala",
     description: "Rigorous industry immersion covering React.js, Angular, Node.js, Express.js, MongoDB, REST API architecture, and production deployment."
   }

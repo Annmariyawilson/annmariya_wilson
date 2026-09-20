@@ -1,58 +1,51 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Sparkles, Briefcase } from 'lucide-react';
 import { experiences } from '../data/portfolioData';
+import SectionHeader from './SectionHeader';
 
 const Experience = () => {
   return (
-    <section className="section experience-section" id="experience">
+    <section className="section" id="experience">
       <div className="container">
-        <div className="section-header text-center">
-          <span className="section-tag">Career History</span>
-          <h2 className="section-title">Professional Experience</h2>
-          <p className="section-desc">
-            Demonstrated track record in architecting production platforms, reusable design systems, and full-stack solutions.
-          </p>
-        </div>
+        <SectionHeader 
+          title="Professional Experience" 
+          subtitle="My track record of building production-ready applications, collaborating with agile teams, and delivering high-quality digital solutions."
+          alignment="center"
+          tag="Career Journey"
+          Icon={Sparkles}
+          className="fade-up"
+        />
 
-        <div className="timeline-container">
+        <div className="timeline-container fade-up">
           <div className="timeline-line"></div>
-
+          
           {experiences.map((exp, idx) => (
-            <div key={idx} className="timeline-item">
+            <div key={idx} className="experience-card">
               <div className="timeline-dot"></div>
-              <div className="glass-panel experience-card">
-                <div className="exp-header">
-                  <div className="exp-role-company">
-                    <h3 className="exp-role">{exp.role}</h3>
-                    <span className="exp-company">{exp.company}</span>
-                  </div>
-
-                  <div className="exp-badges">
-                    <span className="exp-period">
-                      <Calendar size={13} style={{ display: 'inline', marginRight: '4px' }} />
-                      {exp.period}
-                    </span>
-                    <span className="exp-location">
-                      <MapPin size={13} style={{ display: 'inline', marginRight: '4px' }} />
-                      {exp.location}
-                    </span>
-                    <span className="exp-type">{exp.type}</span>
-                  </div>
+              
+              <div className="exp-header">
+                <div>
+                  <h3 className="exp-role">{exp.role}</h3>
+                  <div className="exp-company">{exp.company}</div>
                 </div>
-
-                <ul className="exp-bullets">
-                  {exp.highlights.map((bullet, bIdx) => (
-                    <li key={bIdx}>{bullet}</li>
-                  ))}
-                </ul>
-
-                <div className="exp-tags">
-                  {exp.tags.map((tag, tIdx) => (
-                    <span key={tIdx} className="exp-tag">
-                      #{tag}
-                    </span>
-                  ))}
+                <div className="exp-meta" style={{ textAlign: 'right' }}>
+                  <div>{exp.period}</div>
+                  <div>{exp.location} • {exp.type}</div>
                 </div>
+              </div>
+
+              <ul className="exp-highlights" style={{ listStyle: 'none', padding: 0 }}>
+                {exp.highlights.map((highlight, hIdx) => (
+                  <li key={hIdx}>{highlight}</li>
+                ))}
+              </ul>
+              
+              <div className="skill-tags" style={{ marginTop: '1.5rem' }}>
+                {exp.tags.map((tag, tIdx) => (
+                  <span key={tIdx} className="skill-tag" style={{ fontSize: '0.75rem', color: 'var(--accent-primary)' }}>
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
