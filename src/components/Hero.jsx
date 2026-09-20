@@ -25,10 +25,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-actions-row">
-            <a href="#projects" className="btn btn-sage">
-              <span>View Projects</span>
-              <ArrowRight size={16} />
-            </a>
+
             <div className="hero-social-links">
               <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hero-social-btn">
                 <GitHubIcon size={20} />

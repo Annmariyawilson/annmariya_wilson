@@ -18,14 +18,14 @@ const ProjectModal = ({ project, onClose }) => {
 
   return (
     <div
-      className="modal-backdrop fade-up"
+      className="modal-backdrop open"
       onClick={onClose}
       aria-hidden="false"
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="modal-dialog glass-panel"
+        className="modal-content-wrapper"
         onClick={(e) => e.stopPropagation()}
       >
         <button
