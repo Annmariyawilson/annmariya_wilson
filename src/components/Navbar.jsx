@@ -12,15 +12,12 @@ const Navbar = () => {
       <div className="nav-container">
         <a href="#hero" className="brand-logo" id="brandLogo" onClick={closeMenu}>
           <div className="logo-text-group">
-            <span className="logo-text">{personalInfo.name}</span>
-            <span className="logo-sub">Full Stack Developer</span>
+            <span className="logo-text" style={{ fontSize: '1.25rem', letterSpacing: '0.1em', fontFamily: 'var(--font-serif)' }}>AW.</span>
           </div>
         </a>
 
         <nav className={`nav-links ${mobileMenuOpen ? 'active' : ''}`} id="navMenu">
-          <a href="#about" className="nav-link" onClick={closeMenu}>
-            About
-          </a>
+
           <a href="#projects" className="nav-link" onClick={closeMenu}>
             Projects
           </a>
@@ -29,9 +26,6 @@ const Navbar = () => {
           </a>
           <a href="#experience" className="nav-link" onClick={closeMenu}>
             Experience
-          </a>
-          <a href="#services" className="nav-link" onClick={closeMenu}>
-            Services
           </a>
         </nav>
 

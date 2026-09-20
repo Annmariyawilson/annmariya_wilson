@@ -10,9 +10,11 @@ const Hero = () => {
         {/* Left Column: Typography & Content */}
         <div className="hero-content">
 
-
+          <h1 className="hero-title">
+            Full Stack <br /> <span className="serif-italic-accent">Developer</span>
+          </h1>
           <p className="hero-subtitle">
-            I'm <strong>{personalInfo.name}</strong>, a {personalInfo.role}. I help businesses and startups create beautiful, responsive websites and powerful web apps using React, Next.js, Express.js, and Node.js.
+            I'm <strong>{personalInfo.name}</strong>. I help businesses and startups create beautiful, responsive websites and powerful, scalable web applications.
           </p>
 
           <div className="hero-tech-strip">

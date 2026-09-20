@@ -1,11 +1,8 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+
 
   return (
     <footer className="site-footer">
@@ -18,14 +15,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} All rights reserved.
         </div>
         
-        <button 
-          onClick={scrollToTop}
-          className="btn btn-outline-editorial"
-          style={{ width: '40px', height: '40px', padding: 0, borderRadius: '50%' }}
-          aria-label="Scroll to top"
-        >
-          <ArrowUp size={18} />
-        </button>
+
       </div>
     </footer>
   );
