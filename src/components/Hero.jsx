@@ -21,7 +21,6 @@ const Hero = () => {
             <span className="hero-tech-badge">Express.js</span>
             <span className="hero-tech-badge">Node.js</span>
             <span className="hero-tech-badge">MongoDB</span>
-            <span className="hero-tech-badge">AI-Assisted Dev</span>
           </div>
 
           <div className="hero-actions-row">

@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Annmariya Wilson",
   role: "Full Stack Developer",
   avatar: "/assets/hero/annmariya-wilsom-profile-img.png",
-  subtitles: ["Frontend Developer", "AI-Assisted Development"],
+  subtitles: ["Frontend Developer", "Full Stack Developer"],
   tagline: "Building responsive web applications, SaaS platforms, and seamless full-stack digital experiences.",
   email: "annmariyawilson04@gmail.com",
   location: "Dubai, UAE",
@@ -11,8 +11,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/annmariya-wilson",
   linkedinUsername: "annmariya-wilson",
   liveUrl: "https://annmariyawilson.vercel.app",
-  summary:
-    "Full Stack Developer with 2+ years of experience building responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions. Hands-on experience with React.js, Next.js, Angular, Node.js, Express.js, MongoDB, REST APIs, authentication, RBAC, and responsive UI development. Experienced in AI-assisted software development using Cursor and Antigravity, with a focus on reusable components, API integration, performance, and user experience.",
+  summary: "Full Stack Developer with 2+ years of experience building responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions. Hands-on experience with React.js, Next.js, Angular, Node.js, Express.js, MongoDB, REST APIs, authentication, RBAC, and responsive UI development. Dedicated to writing clean code with a focus on reusable components, API integration, performance, and user experience.",
   stats: [
     { label: "Years Experience", value: "2+" },
     { label: "Live Client Projects", value: "10+" },
@@ -71,14 +70,7 @@ export const technicalSkills = {
       { name: "Agile / Scrum", level: "Expert" }
     ]
   },
-  aiTools: {
-    category: "AI-Assisted Development",
-    icon: "Sparkles",
-    skills: [
-      { name: "Cursor AI", level: "Expert" },
-      { name: "Antigravity", level: "Expert" }
-    ]
-  },
+
   other: {
     category: "Other Skills",
     icon: "Cpu",
