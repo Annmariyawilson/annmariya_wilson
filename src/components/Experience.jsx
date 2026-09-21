@@ -28,7 +28,7 @@ const Experience = () => {
                   <h3 className="exp-role">{exp.role}</h3>
                   <div className="exp-company">{exp.company}</div>
                 </div>
-                <div className="exp-meta" style={{ textAlign: 'right' }}>
+                <div className="exp-meta">
                   <div>{exp.period}</div>
                   <div>{exp.location} • {exp.type}</div>
                 </div>

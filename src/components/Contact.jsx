@@ -37,14 +37,6 @@ const Contact = () => {
     <section className="section" id="contact" style={{ paddingBottom: '6rem' }}>
       <div className="container">
         
-        <div className="contact-section-header" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-          <h2 style={{ fontSize: '3.5rem', fontWeight: '500', color: 'var(--text-primary)', marginBottom: '1rem', letterSpacing: '-0.02em', fontFamily: 'var(--font-serif)' }}>
-            Let's build together.
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-            I'm currently available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-          </p>
-        </div>
 
         <div className="contact-layout-box">
           
@@ -91,9 +83,12 @@ const Contact = () => {
 
           {/* Info Side (Right) */}
           <div className="contact-info-side">
+            <h2 style={{ fontSize: '2.5rem', fontWeight: '500', color: 'var(--text-primary)', marginBottom: '2rem', letterSpacing: '-0.02em', fontFamily: 'var(--font-serif)', lineHeight: '1.2' }}>
+              Let's build together.
+            </h2>
             <div>
               <h4 style={{ fontSize: '1.1rem', fontWeight: '400', marginBottom: '0.2rem', color: 'var(--text-primary)' }}>Contact</h4>
-              <a href={`mailto:${personalInfo.email}`} style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem' }}>{personalInfo.email}</a>
+              <a href={`mailto:${personalInfo.email}`} style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', wordBreak: 'break-all' }}>{personalInfo.email}</a>
             </div>
             
             <div>
