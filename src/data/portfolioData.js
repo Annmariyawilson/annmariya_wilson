@@ -85,42 +85,47 @@ export const technicalSkills = {
 
 export const experiences = [
   {
-    company: "MINDLABS SYSTEMS PVT. LTD",
+    company: "Mindlabs Systems",
     role: "UI Developer",
-    period: "07/2026 – 09/2026",
-    location: "Kakkanad, Kerala",
+    period: "Jul 2026 – Present",
+    location: "Ernakulam, Kerala",
     type: "Full-Time",
     highlights: [
-      "Developed responsive web interfaces and reusable UI components using HTML, CSS, and JavaScript.",
-      "Translated UI/UX designs into functional interfaces and collaborated on testing and debugging."
+      "Built responsive websites using HTML, CSS, JavaScript, and Tailwind CSS.",
+      "Collaborated with UI/UX designers and backend developers to deliver accurate and functional web interfaces.",
+      "Developed mobile, tablet, and desktop responsive UIs with cross-browser compatibility.",
+      "Improved website performance and SEO using Lighthouse and frontend optimization techniques."
     ],
-    tags: ["HTML", "CSS", "JavaScript", "UI/UX", "Responsive Design"]
+    tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "UI/UX", "SEO"]
   },
   {
-    company: "THINK FORGE GLOBAL LLP",
+    company: "Think Forge Global LLP",
     role: "Full Stack Developer",
-    period: "06/2025 – 05/2026",
-    location: "Malappuram, Kerala",
+    period: "Jun 2025 – Jul 2026",
+    location: "Kerala",
     type: "Full-Time",
     highlights: [
-      "Built responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions with React.js, Next.js, and Node.js.",
-      "Implemented reusable components, dashboards, authentication, RBAC, and REST API integrations.",
-      "Worked with MongoDB, MySQL, Supabase, and Shopify; supported performance and responsive-design improvements.",
-      "Collaborated with Git, Bitbucket, Slack, and Jira in Agile/Scrum environments."
+      "Developed and delivered 10+ web apps, including trading platforms, e-commerce sites, and business portals.",
+      "Built frontend dashboards for Zyvest Capital (trading platform) using Next.js and Tailwind CSS for Admin, Employee and User roles.",
+      "Integrated REST APIs for user authentication, wallets, live charts, and reports.",
+      "Used AI tools (Cursor, Antigravity) and Lighthouse to speed up development and boost SEO performance.",
+      "Handled client requirements directly and worked with QA testers and designers using Jira and Slack."
     ],
-    tags: ["React.js", "Next.js", "Node.js", "MongoDB", "Supabase", "Shopify", "Agile"]
+    tags: ["Next.js", "Tailwind CSS", "REST APIs", "AI Tools", "Jira", "Slack"]
   },
   {
-    company: "FREELANCE",
-    role: "Full Stack Developer",
-    period: "2024 – 2025",
-    location: "Remote",
-    type: "Freelance",
+    company: "NEXPRESSION PVT. LTD",
+    role: "Web Developer",
+    period: "Nov 2024 – May 2025",
+    location: "Ernakulam",
+    type: "Full-Time",
     highlights: [
-      "Developed a College Management System with Angular, Node.js, Express.js, and MongoDB.",
-      "Implemented JWT authentication, RBAC, CRUD operations, responsive dashboards, and REST APIs."
+      "Developed Foodyko, a full-stack e-commerce food ordering platform using the MEAN stack with cart management, dynamic product menus, and checkout flows.",
+      "Built a full-stack College Management System using Angular, Node.js, Express.js, and MongoDB.",
+      "Implemented secure authentication with JWT, role-based access control (Admin/User), and backend CRUD operations.",
+      "Managed version control, branching workflows, and code reviews using Git and GitHub."
     ],
-    tags: ["Angular", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs"]
+    tags: ["MEAN Stack", "Angular", "Node.js", "Express.js", "MongoDB", "JWT", "Git"]
   }
 ];
 
