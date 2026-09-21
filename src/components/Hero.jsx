@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, MapPin, Mail, Code, Database, Layout } from 'lucide-react';
+import { ArrowRight, Sparkles, MapPin, Mail, Code, Database, Layout, Download } from 'lucide-react';
 import { GitHubIcon, LinkedInIcon } from './Icons';
 import { personalInfo } from '../data/portfolioData';
 
@@ -18,14 +18,20 @@ const Hero = () => {
           </p>
 
           <div className="hero-tech-strip">
+            <span className="hero-tech-badge">Angular</span>
             <span className="hero-tech-badge">React.js</span>
             <span className="hero-tech-badge">Next.js</span>
+            <span className="hero-tech-badge">MongoDB</span>
             <span className="hero-tech-badge">Express.js</span>
             <span className="hero-tech-badge">Node.js</span>
-            <span className="hero-tech-badge">MongoDB</span>
+            <span className="hero-tech-badge">Cursor</span>
+            <span className="hero-tech-badge">Antigravity</span>
           </div>
 
           <div className="hero-actions-row">
+            <a href="/assets/Annmariya_Wilson_CV.pdf" download className="btn btn-sage">
+              <Download size={18} /> Download CV
+            </a>
 
             <div className="hero-social-links">
               <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hero-social-btn">

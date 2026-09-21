@@ -19,11 +19,11 @@ function App() {
 
       <main id="mainContent">
         <Hero />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Education />
         <StatsStrip />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Education />
         <Contact />
       </main>
     </div>

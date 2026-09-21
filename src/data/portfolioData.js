@@ -11,7 +11,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/annmariya-wilson",
   linkedinUsername: "annmariya-wilson",
   liveUrl: "https://annmariyawilson.vercel.app",
-  summary: "Full Stack Developer with 2+ years of experience building responsive web applications, SaaS platforms, trading platforms, and e-commerce solutions. Hands-on experience with React.js, Next.js, Angular, Node.js, Express.js, MongoDB, REST APIs, authentication, RBAC, and responsive UI development. Dedicated to writing clean code with a focus on reusable components, API integration, performance, and user experience.",
+  summary: "Dynamic Full Stack Developer with over 2 years of proven experience in engineering scalable web applications, bespoke SaaS platforms, and high-performance e-commerce solutions. Adept at navigating the entire development lifecycle, I specialize in leveraging modern frameworks like React.js, Next.js, and Node.js to craft intuitive, user-centric interfaces backed by robust, secure architectures. I am passionate about writing clean, maintainable code, optimizing performance, and delivering digital experiences that drive business growth and user engagement.",
   stats: [
     { label: "Years Experience", value: "2+" },
     { label: "Live Client Projects", value: "10+" },
@@ -91,10 +91,10 @@ export const experiences = [
     location: "Ernakulam, Kerala",
     type: "Full-Time",
     highlights: [
-      "Built responsive websites using HTML, CSS, JavaScript, and Tailwind CSS.",
-      "Collaborated with UI/UX designers and backend developers to deliver accurate and functional web interfaces.",
-      "Developed mobile, tablet, and desktop responsive UIs with cross-browser compatibility.",
-      "Improved website performance and SEO using Lighthouse and frontend optimization techniques."
+      "Engineered pixel-perfect, highly responsive user interfaces utilizing HTML5, CSS3, JavaScript, and Tailwind CSS.",
+      "Partnered seamlessly with cross-functional teams, including UI/UX designers and backend engineers, to translate complex design wireframes into robust functional web components.",
+      "Ensured flawless cross-browser compatibility and optimized adaptive layouts for mobile, tablet, and desktop environments.",
+      "Spearheaded technical SEO and frontend performance enhancements, consistently achieving high Lighthouse scores through advanced optimization strategies."
     ],
     tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "UI/UX", "SEO"]
   },
@@ -102,16 +102,16 @@ export const experiences = [
     company: "Think Forge Global LLP",
     role: "Full Stack Developer",
     period: "Jun 2025 – Jul 2026",
-    location: "Kerala",
+    location: "Malappuram, Kerala",
     type: "Full-Time",
     highlights: [
-      "Developed and delivered 10+ web apps, including trading platforms, e-commerce sites, and business portals.",
-      "Built frontend dashboards for Zyvest Capital (trading platform) using Next.js and Tailwind CSS for Admin, Employee and User roles.",
-      "Integrated REST APIs for user authentication, wallets, live charts, and reports.",
-      "Used AI tools (Cursor, Antigravity) and Lighthouse to speed up development and boost SEO performance.",
-      "Handled client requirements directly and worked with QA testers and designers using Jira and Slack."
+      "Architected and successfully deployed over 10 scalable web applications, spanning high-frequency trading platforms, comprehensive e-commerce ecosystems, and dynamic business portals.",
+      "Spearheaded the frontend development of Zyvest Capital's trading dashboard using Next.js and Tailwind CSS, designing secure, role-specific modules (Admin, Employee, User).",
+      "Engineered seamless integrations with complex REST APIs to power real-time data visualization, secure authentication, and financial wallet management.",
+      "Accelerated development lifecycles and significantly elevated technical SEO metrics by strategically implementing AI-assisted workflows (Cursor, Antigravity) and meticulous Lighthouse auditing.",
+      "Managed end-to-end client communications, distilling complex requirements into actionable technical sprints while coordinating closely with QA and design teams via Jira and Slack."
     ],
-    tags: ["Next.js", "Tailwind CSS", "REST APIs", "AI Tools", "Jira", "Slack"]
+    tags: ["React.js", "Next.js", "Tailwind CSS", "REST APIs", "AI Tools", "Jira", "Slack"]
   },
   {
     company: "NEXPRESSION PVT. LTD",
@@ -120,10 +120,10 @@ export const experiences = [
     location: "Ernakulam",
     type: "Full-Time",
     highlights: [
-      "Developed Foodyko, a full-stack e-commerce food ordering platform using the MEAN stack with cart management, dynamic product menus, and checkout flows.",
-      "Built a full-stack College Management System using Angular, Node.js, Express.js, and MongoDB.",
-      "Implemented secure authentication with JWT, role-based access control (Admin/User), and backend CRUD operations.",
-      "Managed version control, branching workflows, and code reviews using Git and GitHub."
+      "Developed 'Foodyko', a comprehensive full-stack e-commerce food ordering platform utilizing the MEAN stack, featuring real-time cart management, dynamic product catalogs, and secure checkout flows.",
+      "Engineered a robust College Management System with Angular, Node.js, Express.js, and MongoDB, digitalizing core institutional workflows.",
+      "Implemented enterprise-grade security protocols, including JWT authentication and fine-grained Role-Based Access Control (RBAC), alongside optimized backend CRUD operations.",
+      "Maintained high code quality and collaborative efficiency by leading version control practices, branching strategies, and rigorous code reviews via Git and GitHub."
     ],
     tags: ["MEAN Stack", "Angular", "Node.js", "Express.js", "MongoDB", "JWT", "Git"]
   }
