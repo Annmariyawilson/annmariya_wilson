@@ -11,7 +11,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/annmariya-wilson",
   linkedinUsername: "annmariya-wilson",
   liveUrl: "https://annmariyawilson.vercel.app",
-  summary: "Dynamic Full Stack Developer with over 2 years of proven experience in engineering scalable web applications, bespoke SaaS platforms, and high-performance e-commerce solutions. Adept at navigating the entire development lifecycle, I specialize in leveraging modern frameworks like React.js, Next.js, and Node.js to craft intuitive, user-centric interfaces backed by robust, secure architectures. I am passionate about writing clean, maintainable code, optimizing performance, and delivering digital experiences that drive business growth and user engagement.",
+  summary: "Dynamic Full Stack Developer with over 2 years of proven experience in developing scalable web applications, bespoke SaaS platforms, and high-performance e-commerce solutions. Adept at navigating the entire development lifecycle, I specialize in leveraging modern frameworks like React.js, Next.js, and Node.js to craft intuitive, user-centric interfaces backed by robust, secure architectures. I am passionate about writing clean, maintainable code, optimizing performance, and delivering digital experiences that drive business growth and user engagement.",
   stats: [
     { label: "Years Experience", value: "2+" },
     { label: "Live Client Projects", value: "10+" },
@@ -91,8 +91,8 @@ export const experiences = [
     location: "Ernakulam, Kerala",
     type: "Full-Time",
     highlights: [
-      "Engineered pixel-perfect, highly responsive user interfaces utilizing HTML5, CSS3, JavaScript, and Tailwind CSS.",
-      "Partnered seamlessly with cross-functional teams, including UI/UX designers and backend engineers, to translate complex design wireframes into robust functional web components.",
+      "Developed pixel-perfect, highly responsive user interfaces utilizing HTML5, CSS3, JavaScript, and Tailwind CSS.",
+      "Partnered seamlessly with cross-functional teams, including UI/UX designers and backend developers, to translate complex design wireframes into robust functional web components.",
       "Ensured flawless cross-browser compatibility and optimized adaptive layouts for mobile, tablet, and desktop environments.",
       "Spearheaded technical SEO and frontend performance enhancements, consistently achieving high Lighthouse scores through advanced optimization strategies."
     ],
@@ -107,7 +107,7 @@ export const experiences = [
     highlights: [
       "Architected and successfully deployed over 10 scalable web applications, spanning high-frequency trading platforms, comprehensive e-commerce ecosystems, and dynamic business portals.",
       "Spearheaded the frontend development of Zyvest Capital's trading dashboard using Next.js and Tailwind CSS, designing secure, role-specific modules (Admin, Employee, User).",
-      "Engineered seamless integrations with complex REST APIs to power real-time data visualization, secure authentication, and financial wallet management.",
+      "Developed seamless integrations with complex REST APIs to power real-time data visualization, secure authentication, and financial wallet management.",
       "Accelerated development lifecycles and significantly elevated technical SEO metrics by strategically implementing AI-assisted workflows (Cursor, Antigravity) and meticulous Lighthouse auditing.",
       "Managed end-to-end client communications, distilling complex requirements into actionable technical sprints while coordinating closely with QA and design teams via Jira and Slack."
     ],
@@ -121,7 +121,7 @@ export const experiences = [
     type: "Full-Time",
     highlights: [
       "Developed 'Foodyko', a comprehensive full-stack e-commerce food ordering platform utilizing the MEAN stack, featuring real-time cart management, dynamic product catalogs, and secure checkout flows.",
-      "Engineered a robust College Management System with Angular, Node.js, Express.js, and MongoDB, digitalizing core institutional workflows.",
+      "Built a robust College Management System with Angular, Node.js, Express.js, and MongoDB, digitalizing core institutional workflows.",
       "Implemented enterprise-grade security protocols, including JWT authentication and fine-grained Role-Based Access Control (RBAC), alongside optimized backend CRUD operations.",
       "Maintained high code quality and collaborative efficiency by leading version control practices, branching strategies, and rigorous code reviews via Git and GitHub."
     ],
@@ -432,9 +432,9 @@ export const projects = [
     shortDesc:
       "Enterprise digital solutions and SaaS agency platform featuring product capabilities, case studies, and lead capture.",
     fullDesc:
-      "Phoenix Digital is an agency and SaaS product showcase platform highlighting modern digital engineering services, enterprise case studies, technology stacks, and consultation bookings.",
+      "Phoenix Digital is an agency and SaaS product showcase platform highlighting modern digital development services, enterprise case studies, technology stacks, and consultation bookings.",
     features: [
-      "Modular product and engineering services presentation",
+      "Modular product and development services presentation",
       "Interactive case study cards with measurable client ROI",
       "Lead generation and instant consultation booking integration",
       "High-speed SPA build on Vercel"
@@ -496,6 +496,7 @@ export const certifications = [
     issuer: "Luminar Technolab",
     period: "2024",
     location: "Calicut, Kerala",
-    description: "Rigorous industry immersion covering React.js, Angular, Node.js, Express.js, MongoDB, REST API architecture, and production deployment."
+    description: "Rigorous industry immersion covering React.js, Angular, Node.js, Express.js, MongoDB, REST API architecture, and production deployment.",
+    link: "https://drive.google.com/file/d/1RRakbO9A7g9SByOrOti4SkGVAuqWlYOK/view"
   }
 ];

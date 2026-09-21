@@ -14,7 +14,7 @@ const Skills = () => {
         <SectionHeader 
           title="Technical Expertise" 
           subtitle="A comprehensive overview of my technical stack, focusing on modern web technologies, scalable architectures, and clean code practices."
-          alignment="center"
+          alignment="left"
           tag="Capabilities"
           Icon={Sparkles}
           className="fade-up"

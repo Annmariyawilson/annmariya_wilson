@@ -10,7 +10,7 @@ const Experience = () => {
         <SectionHeader 
           title="Professional Experience" 
           subtitle="My track record of building production-ready applications, collaborating with agile teams, and delivering high-quality digital solutions."
-          alignment="center"
+          alignment="left"
           tag="Career Journey"
           Icon={Sparkles}
           className="fade-up"

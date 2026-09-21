@@ -10,7 +10,7 @@ const services = [
   },
   {
     icon: Smartphone,
-    title: "UI/UX Engineering",
+    title: "UI/UX Development",
     desc: "Intuitive, responsive user interfaces and reusable component systems that deliver fluid interactions across all devices."
   },
   {
@@ -31,7 +31,7 @@ const Services = () => {
       <div className="container">
         <SectionHeader 
           title="Services & Capabilities" 
-          subtitle="End-to-end engineering expertise delivering polished digital products from concept to cloud deployment."
+          subtitle="End-to-end development expertise delivering polished digital products from concept to cloud deployment."
           alignment="left"
           tag="What I Do"
           Icon={Sparkles}

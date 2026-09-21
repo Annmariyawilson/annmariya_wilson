@@ -9,8 +9,8 @@ const About = () => {
       <div className="container">
         <SectionHeader 
           title="About Me" 
-          subtitle="A closer look at my background, philosophy, and what drives my engineering process."
-          alignment="center"
+          subtitle="A closer look at my background, philosophy, and what drives my development process."
+          alignment="left"
           tag="Introduction"
           Icon={Sparkles}
           className="fade-up"
