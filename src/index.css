@@ -1090,6 +1090,15 @@ h1, h2, h3, h4, h5, h6, .serif-heading {
 
 /* Responsive */
 @media (max-width: 1024px) {
+  /* Keep side-by-side as per lg/xl, but adjust size, space, and padding */
+  .hero-grid { gap: 2rem; }
+  .hero-title { font-size: 3.5rem; margin-bottom: 1rem; }
+  .hero-subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
+  .hero-section { padding-top: 6rem; }
+  .hero-visual { max-width: 280px; }
+}
+
+@media (max-width: 991px) {
   .hero-grid, .contact-card-banner { grid-template-columns: 1fr; gap: 3rem; }
   .hero-content { order: 2; text-align: center; }
   .hero-visual { order: 1; max-width: 320px; margin: 0 auto; }
