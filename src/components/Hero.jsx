@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-actions-row">
-            <a href="/assets/Annmariya_Wilson_CV.pdf" download className="btn btn-sage">
+            <a href="/assets/hero/Annmariya-wilson.pdf" download className="btn btn-sage">
               <Download size={18} /> Download CV
             </a>
 
