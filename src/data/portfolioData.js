@@ -137,7 +137,7 @@ export const projects = [
     image: "/assets/projects/salmara-ayurveda.jpg",
     category: "E-Commerce",
     badge: "Shopify Store",
-    techStack: ["Shopify", "React.js", "Next.js", "Node.js", "Supabase"],
+    techStack: ["Shopify", "Supabase", "Node.js", "React.js"],
     shortDesc:
       "Premium Ayurvedic wellness e-commerce storefront with live inventory sync, product catalog, and seamless checkout.",
     fullDesc:
@@ -156,7 +156,7 @@ export const projects = [
     image: "/assets/projects/chillmaster-uae.jpg",
     category: "Corporate & Services",
     badge: "UAE Services",
-    techStack: ["Next.js", "React.js", "Tailwind CSS", "Responsive UI"],
+    techStack: ["React.js", "Tailwind CSS", "Responsive", "SEO"],
     shortDesc:
       "Commercial HVAC, refrigeration, and cooling engineering services platform serving clients across the UAE.",
     fullDesc:
@@ -175,7 +175,7 @@ export const projects = [
     image: "/assets/projects/kalangara-paints.jpg",
     category: "Corporate & Retail",
     badge: "Industrial Brand",
-    techStack: ["React.js", "Node.js", "Express.js", "Tailwind CSS"],
+    techStack: ["Supabase", "React.js", "Node.js", "Express.js", "Automatic WhatsApp Chat"],
     shortDesc:
       "Digital catalogue, color shade visualizer, and dealer locator for a premier decorative and industrial paint brand.",
     fullDesc:
@@ -214,7 +214,7 @@ export const projects = [
     image: "/assets/projects/day-off-journeys.jpg",
     category: "Travel & Hospitality",
     badge: "Live Client",
-    techStack: ["React.js", "Next.js", "Tailwind CSS", "REST APIs"],
+    techStack: ["Next.js", "Tailwind CSS", "REST APIs"],
     shortDesc:
       "Curated travel, tour booking, and experiential vacation platform with interactive packages and itinerary planning.",
     fullDesc:
@@ -271,7 +271,7 @@ export const projects = [
     image: "/assets/projects/depro-trading.jpg", 
     category: "Corporate & Services",
     badge: "Hardware Solutions",
-    techStack: ["Next.js", "Tailwind CSS", "React.js"],
+    techStack: ["Next.js", "Tailwind CSS"],
     shortDesc:
       "B2B and B2C digital platform for premium interior hardware, aluminum fabrication, and wholesale supply.",
     fullDesc:
@@ -352,7 +352,7 @@ export const projects = [
     image: "/assets/projects/choco-mint.jpg",
     category: "Food & Hospitality",
     badge: "Web App",
-    techStack: ["React.js", "Tailwind CSS", "JavaScript", "Vercel"],
+    techStack: ["React.js", "Tailwind CSS", "Node.js", "Supabase"],
     shortDesc:
       "Artisanal confectionery and bakery web application with interactive dessert menus and customized gift hampers.",
     fullDesc:
@@ -371,7 +371,7 @@ export const projects = [
     image: "/assets/projects/true-news.jpg",
     category: "Media & News",
     badge: "Media Portal",
-    techStack: ["Next.js", "REST APIs", "Tailwind CSS", "Vercel"],
+    techStack: ["Next.js", "Tailwind CSS", "Node.js", "Supabase"],
     shortDesc:
       "Real-time news and journalism portal with category filtering, breaking news tickers, and rich editorial layouts.",
     fullDesc:
@@ -409,7 +409,7 @@ export const projects = [
     image: "/assets/projects/trade-learners.jpg",
     category: "FinTech & EdTech",
     badge: "EdTech Platform",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    techStack: ["Angular", "TypeScript", "Responsive", "Tailwind CSS"],
     shortDesc:
       "Financial education and trading academy platform with interactive curriculum modules and market learning resources.",
     fullDesc:
@@ -428,7 +428,7 @@ export const projects = [
     image: "/assets/projects/phoenix-platform.jpg",
     category: "SaaS & Agency",
     badge: "SaaS Solutions",
-    techStack: ["React.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    techStack: ["React.js", "Responsive", "Tailwind CSS"],
     shortDesc:
       "Enterprise digital solutions and SaaS agency platform featuring product capabilities, case studies, and lead capture.",
     fullDesc:
@@ -447,7 +447,7 @@ export const projects = [
     image: "/assets/projects/security-spy.jpg",
     category: "Security & IoT",
     badge: "Security Tech",
-    techStack: ["React.js", "Next.js", "Tailwind CSS", "Vercel"],
+    techStack: ["Next.js", "Tailwind CSS", "Vercel"],
     shortDesc:
       "Commercial surveillance and smart security solutions portal featuring product catalogs and installation plans.",
     fullDesc:
@@ -466,7 +466,7 @@ export const projects = [
     image: "/assets/projects/ar-architects.jpg",
     category: "Architecture & Design",
     badge: "Design Studio",
-    techStack: ["React.js", "Vite", "CSS3 Animation", "Vercel"],
+    techStack: ["React.js", "Tailwind CSS", "Responsive"],
     shortDesc:
       "Architectural design and luxury interior portfolio showcasing residential, commercial, and spatial masterplans.",
     fullDesc:

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ExternalLink } from 'lucide-react';
 
 const ProjectModal = ({ project, onClose }) => {
@@ -16,7 +17,7 @@ const ProjectModal = ({ project, onClose }) => {
 
   if (!project) return null;
 
-  return (
+  return createPortal(
     <div
       className="modal-backdrop open"
       onClick={onClose}
@@ -85,7 +86,8 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
