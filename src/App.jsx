@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
 import StatsStrip from './components/StatsStrip';
-import Contact from './components/Contact';
-import Education from './components/Education';
+
+const Projects = lazy(() => import('./components/Projects'));
+const Skills = lazy(() => import('./components/Skills'));
+const Experience = lazy(() => import('./components/Experience'));
+const Contact = lazy(() => import('./components/Contact'));
+const Education = lazy(() => import('./components/Education'));
 
 function App() {
   useEffect(() => {
@@ -18,15 +19,30 @@ function App() {
         }
       });
     }, {
-      threshold: 0.1,
+      threshold: 0,
       rootMargin: "0px 0px -50px 0px"
     });
 
-    const hiddenElements = document.querySelectorAll('.section, .fade-up');
-    hiddenElements.forEach((el) => observer.observe(el));
+    const observeElements = () => {
+      const hiddenElements = document.querySelectorAll('.section:not(.is-revealed), .fade-up:not(.is-revealed)');
+      hiddenElements.forEach((el) => observer.observe(el));
+    };
+
+    observeElements();
+
+    // Watch for lazy-loaded components entering the DOM
+    const mutationObserver = new MutationObserver(() => {
+      observeElements();
+    });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
 
     return () => {
-      hiddenElements.forEach((el) => observer.unobserve(el));
+      observer.disconnect();
+      mutationObserver.disconnect();
     };
   }, []);
 
@@ -48,11 +64,13 @@ function App() {
           </a>
         </div>
 
-        <Projects />
-        <Experience />
-        <Skills />
-        <Education />
-        <Contact />
+        <Suspense fallback={<div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)' }}>Loading...</div>}>
+          <Projects />
+          <Experience />
+          <Skills />
+          <Education />
+          <Contact />
+        </Suspense>
       </main>
     </div>
   );

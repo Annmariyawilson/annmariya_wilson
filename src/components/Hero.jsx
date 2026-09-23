@@ -47,7 +47,7 @@ const Hero = () => {
               <div className="hero-animated-bg-shape shape-1"></div>
               <div className="hero-animated-bg-shape shape-2"></div>
               <div className="dots-pattern top-left"></div>
-              <img src="/assets/hero/annmariya-wilsom-profile-img.png" alt="Annmariya Wilson" className="hero-profile-image" />
+              <img src="/assets/hero/annmariya-wilsom-profile-img.png" alt="Annmariya Wilson" className="hero-profile-image" fetchpriority="high" decoding="sync" />
               <div className="corner-accent top-left"></div>
               <div className="corner-accent bottom-right"></div>
             </div>
