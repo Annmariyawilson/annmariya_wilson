@@ -32,8 +32,7 @@ export const technicalSkills = {
       { name: "TypeScript", level: "Advanced" },
       { name: "HTML5 & CSS3", level: "Expert" },
       { name: "Tailwind CSS", level: "Expert" },
-      { name: "Bootstrap", level: "Advanced" },
-      { name: "Responsive Web Design", level: "Expert" }
+      { name: "Vite", level: "Advanced" }
     ]
   },
   backend: {
@@ -43,9 +42,8 @@ export const technicalSkills = {
       { name: "Node.js", level: "Expert" },
       { name: "Express.js", level: "Expert" },
       { name: "REST APIs", level: "Expert" },
-      { name: "JWT Authentication", level: "Advanced" },
-      { name: "Role-Based Access (RBAC)", level: "Advanced" },
-      { name: "CRUD Operations", level: "Expert" }
+      { name: "Firebase", level: "Advanced" },
+      { name: "JWT & RBAC", level: "Advanced" }
     ]
   },
   database: {
@@ -53,32 +51,36 @@ export const technicalSkills = {
     icon: "Database",
     skills: [
       { name: "MongoDB", level: "Advanced" },
-      { name: "MySQL", level: "Intermediate" },
-      { name: "Supabase", level: "Advanced" }
+      { name: "Supabase", level: "Advanced" },
+      { name: "MySQL", level: "Intermediate" }
+    ]
+  },
+  automation: {
+    category: "Automation & API",
+    icon: "Bot",
+    skills: [
+      { name: "WATI (WhatsApp)", level: "Advanced" },
+      { name: "AI Integration (Gemini)", level: "Advanced" },
+      { name: "Webhooks", level: "Advanced" }
     ]
   },
   tools: {
-    category: "Tools & Methodologies",
+    category: "Tools & Cloud",
     icon: "GitBranch",
     skills: [
-      { name: "Git", level: "Expert" },
-      { name: "GitHub", level: "Expert" },
-      { name: "Bitbucket", level: "Advanced" },
+      { name: "Git & GitHub", level: "Expert" },
+      { name: "Vercel", level: "Advanced" },
       { name: "Postman", level: "Expert" },
-      { name: "Jira", level: "Advanced" },
-      { name: "Slack", level: "Advanced" },
-      { name: "Agile / Scrum", level: "Expert" }
+      { name: "Jira & Slack", level: "Advanced" }
     ]
   },
-
   other: {
     category: "Other Skills",
     icon: "Cpu",
     skills: [
       { name: "Shopify", level: "Advanced" },
-      { name: "API Integration", level: "Expert" },
-      { name: "Performance Optimization", level: "Expert" },
-      { name: "SEO", level: "Advanced" }
+      { name: "Performance Opt.", level: "Expert" },
+      { name: "Technical SEO", level: "Advanced" }
     ]
   }
 };

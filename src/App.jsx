@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import Hero from './components/Hero';
 import StatsStrip from './components/StatsStrip';
 
+const FeaturedProduct = lazy(() => import('./components/FeaturedProduct'));
 const Projects = lazy(() => import('./components/Projects'));
 const Skills = lazy(() => import('./components/Skills'));
 const Experience = lazy(() => import('./components/Experience'));
@@ -59,13 +60,14 @@ function App() {
         <StatsStrip />
         
         <div style={{ display: 'flex', justifyContent: 'center', margin: '3rem 0', opacity: 0.8 }} className="fade-up">
-          <a href="#projects" aria-label="Scroll down to projects" className="bounce-animation" style={{ color: 'var(--accent-primary)', cursor: 'pointer' }}>
+          <a href="#products" aria-label="Scroll down to products" className="bounce-animation" style={{ color: 'var(--accent-primary)', cursor: 'pointer' }}>
             <ChevronDown size={32} />
           </a>
         </div>
 
         <Suspense fallback={<div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)' }}>Loading...</div>}>
           <Projects />
+          <FeaturedProduct />
           <Experience />
           <Skills />
           <Education />

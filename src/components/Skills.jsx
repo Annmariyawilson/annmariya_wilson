@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout, Server, Database, GitBranch, Sparkles, Cpu } from 'lucide-react';
+import { Layout, Server, Database, GitBranch, Sparkles, Cpu, Bot } from 'lucide-react';
 import { technicalSkills } from '../data/portfolioData';
 import SectionHeader from './SectionHeader';
 
 const iconMap = {
-  Layout, Server, Database, GitBranch, Sparkles, Cpu
+  Layout, Server, Database, GitBranch, Sparkles, Cpu, Bot
 };
 
 const Skills = () => {
