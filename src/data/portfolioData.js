@@ -40,6 +40,7 @@ export const technicalSkills = {
     icon: "Server",
     skills: [
       { name: "Node.js", level: "Expert" },
+      { name: "Python", level: "Intermediate" },
       { name: "Express.js", level: "Expert" },
       { name: "REST APIs", level: "Expert" },
       { name: "Firebase", level: "Advanced" },
