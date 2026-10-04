@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
 
             <div className="editorial-actions">
-              <a href="/assets/hero/annmariya_wilson.pdf" download className="btn btn-sage">
+              <a href="/assets/hero/Annmariya-Wilson-Resume.pdf" download="Annmariya-Wilson-Resume.pdf" className="btn btn-sage">
                 <Download size={18} /> Download
               </a>
 
